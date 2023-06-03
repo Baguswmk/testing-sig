@@ -5,7 +5,7 @@ import "../style/Slider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ContentInfo from "./ContentInfo";
-import MapComponent from "./MapCard";
+import MapInfo from "./MapInfo";
 
 const SliderComponent = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -30,7 +30,7 @@ const SliderComponent = () => {
         <ContentInfo />
       </div>
       <div className={`slide-map ${activeSlide === 1 ? "active" : ""}`}>
-        <MapComponent />
+        <MapInfo />
       </div>
     </Slider>
   );

@@ -1,7 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "../style/MapCard.css";
+import "../style/MapInfo.css";
 
-const MapCard = () => {
+const MapInfo = () => {
   return (
     <>
       <div className="headerMap">
@@ -10,7 +10,7 @@ const MapCard = () => {
       <div className="wrapper">
         <div className="cardMap">
           <div className="mapContainer">
-            <MapComponent />
+            <MapCard />
           </div>
           <div className="cardMapContent">{/* Konten lainnya di dalam card */}</div>
         </div>
@@ -19,7 +19,7 @@ const MapCard = () => {
   );
 };
 
-const MapComponent = () => {
+const MapCard = () => {
   const bungamayang = [-4.3919, 104.3053];
 
   return (
@@ -32,4 +32,4 @@ const MapComponent = () => {
   );
 };
 
-export default MapCard;
+export default MapInfo;
