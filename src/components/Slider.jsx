@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Slider from "react-slick";
 import "../style/Slider.css";
 
@@ -21,7 +21,7 @@ const SliderComponent = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     draggable: false,
-    beforeChange: (current, next) => handleSlideChange(next),
+    beforeChange: (next) => handleSlideChange(next),
   };
 
   return (
