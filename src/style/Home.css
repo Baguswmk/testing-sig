@@ -10,7 +10,7 @@ body {
   background-position: center;
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: calc(100vh - 177px);
   margin: 0;
 }
 
