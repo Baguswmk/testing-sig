@@ -1,0 +1,87 @@
+body {
+  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
+}
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: var(--secondary-font);
+  box-sizing: border-box;
+  box-shadow: var(--box-shadow);
+  border-radius: 32px;
+}
+
+.login-box h2 {
+  margin: 0 0 5px;
+  padding: 0;
+  font-weight: 800;
+  color: #000;
+  text-align: center;
+}
+
+.login-box h4 {
+  margin: 0 0 10px;
+  padding: 0;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+  margin-top: 30px;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  background: transparent;
+}
+svg {
+  float: right;
+  margin-bottom: -50px;
+  font-size: 24px;
+  margin-right: 16px;
+}
+
+.login-box .user-box p {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.login-box .user-box span {
+  font-size: 12px;
+  color: red;
+}
+
+.login-box .user-box span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#loginBtn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: 70%;
+  justify-content: center;
+  display: flex;
+  margin: 25px auto;
+}
+
+#loginBtn:hover {
+  background-color: var(--secondary-color);
+  color: #000;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}

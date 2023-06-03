@@ -1,0 +1,38 @@
+.headerMap h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 50px 50px 10px 75px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 900px;
+  height: 850px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  overflow: hidden;
+}
+
+.cardMap {
+  background-color: var(--primary-color);
+  padding: 20px;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.mapContainer {
+  background-color: var(--secondary-color);
+  border: 2px solid #fff;
+  margin: 0 auto;
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.map {
+  width: 100%;
+  max-width: 600px; /* Ubah nilainya sesuai kebutuhan */
+  height: 100%;
+}

@@ -1,0 +1,217 @@
+body {
+  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
+}
+
+.containerDash {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.contentDash::-webkit-scrollbar {
+  width: 6px;
+}
+
+.contentDash::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.contentDash::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.leftSidebarDash {
+  flex-basis: 20%;
+  background-color: var(--secondary-color);
+}
+
+.contentDash {
+  flex-basis: 60%;
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3) inset;
+}
+
+.sidebarDash {
+  flex-basis: 25%;
+  background-color: var(--secondary-color);
+}
+
+/* Left Sidebar */
+.logoDash {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+.companyLogo {
+  max-width: 120px;
+  margin: 30px;
+}
+
+.profilePict {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.round-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profileDash {
+  margin: 25px;
+}
+
+.profileDash h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profileDash p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.editProfile {
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.editProfile svg {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.leftSidebarDash ul li a,
+.dataLeft {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  margin: 25px;
+}
+
+.menuContent a {
+  text-decoration: dotted;
+  color: #313131;
+  font-size: 14px;
+  margin: 16px 10px;
+  justify-content: center;
+}
+
+.buttonDash {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 70px;
+  position: absolute;
+  bottom: 0;
+}
+
+.buttonDash button {
+  margin-bottom: 10px;
+}
+.buttonDash a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+#btnLogout,
+#btnHelp {
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+#btnLogout {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+#btnLogout:hover,
+#btnHelp:hover {
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+#btnLogout svg {
+  margin-left: 10px;
+  margin-top: -2px;
+  font-size: 20px;
+}
+
+#btnHelp p {
+  margin-left: 10px;
+}
+
+/* Center Dash */
+
+/* Right Sidebar Dash */
+
+.headerRightSide {
+  margin: 100px 0 20px 20px;
+}
+.headerRightSide h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: Bold;
+}
+.headerRightSide h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.search {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+.search input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border: 1px solid #212a3e;
+}
+
+.search input[type="text"]::placeholder {
+  color: #999;
+}
+
+.fasilitasUmum,
+.faq {
+  margin: 25px;
+}
+.fasilitasUmum ul,
+.faq ul {
+  list-style: none;
+}
+.fasilitasUmum li,
+.faq li {
+  margin: 5px 0 10px 20px;
+}
+.fasilitasUmum ul li a,
+.faq ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.fasilitasUmum ul li a:hover,
+.faq ul li a:hover {
+  text-decoration: underline;
+}

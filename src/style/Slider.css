@@ -1,0 +1,104 @@
+.slider {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Gaya untuk slide 1 */
+.slider .slick-slide.slide1 {
+  text-align: center;
+  background: #f1f1f1;
+}
+
+.slider .slick-slide.slide1 h3 {
+  color: #333;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.slider .slick-slide.slide1 img {
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+/* Gaya untuk slide 2 */
+.slider .slick-slide.slide2 {
+  text-align: center;
+  background: #f1f1f1;
+}
+
+.slider .slick-slide.slide2 h3 {
+  color: #333;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.slider .slick-slide.slide2 img {
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+.slider .slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider .slick-dots li {
+  margin: 0 5px;
+}
+
+.slider .slick-dots li button {
+  border: none;
+  background: #ccc;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider .slick-dots li button:hover {
+  background-color: #555;
+}
+
+.slider .slick-dots li.slick-active button {
+  background: #555;
+}
+
+.contentDash .slider {
+  max-width: 100%;
+  margin: 0;
+}
+
+.contentDash .slider .slick-slide {
+  background: transparent;
+}
+
+.contentDash .slider .slick-slide h3 {
+  color: #fff;
+}
+
+.contentDash .slider .slick-slide img {
+  max-width: 100%;
+  margin-top: 0;
+}
+
+.slick-prev,
+.slick-next {
+  top: 30% !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--primary-color) !important;
+  font-size: 30px !important;
+}
