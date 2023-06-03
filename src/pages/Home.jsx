@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../style/Home.css";
+import heroPict from "../public/img/hero.png";
 
 function Home() {
   return (
@@ -24,6 +25,7 @@ function Home() {
               <a href="/login"> Masuk Sekarang</a>
             </button>
           </p>
+          <img src={heroPict} alt="Gambar-Kantor" />
         </div>
       </div>
       <Footer />
