@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import "../style/Home.css";
+import "../style/pages/Home.css";
 import heroPict from "../public/img/hero.png";
 
 function Home() {

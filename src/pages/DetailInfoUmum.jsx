@@ -9,7 +9,7 @@ import { ArrowLeft, GeoAlt } from "react-bootstrap-icons";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../style/DetailInfoUmum.css";
+import "../style/pages/DetailInfoUmum.css";
 
 function DetailInfoUmum() {
   //   const { id } = useParams();

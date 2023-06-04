@@ -1,4 +1,4 @@
-import "../style/Login.css";
+import "../style/pages/Login.css";
 import { Person } from "react-bootstrap-icons";
 import { Lock } from "react-bootstrap-icons";
 

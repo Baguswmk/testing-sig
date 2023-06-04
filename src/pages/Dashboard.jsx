@@ -1,4 +1,4 @@
-import "../style/Dashboard.css";
+import "../style/pages/Dashboard.css";
 import companyLogo from "../public/img/logo.png";
 import profilePict from "../public/img/profilePict.png";
 import { ChevronRight, PencilSquare, BoxArrowRight, ChevronDown } from "react-bootstrap-icons";

@@ -1,4 +1,4 @@
-import "../style/MapInfo.css";
+import "../style/components/MapInfo.css";
 import ErenYeager from "../public/img/profilePict.png";
 import { ArrowRight } from "react-bootstrap-icons";
 

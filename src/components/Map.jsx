@@ -1,6 +1,6 @@
 import { MapContainer, TileLayer, Marker, Popup, Polygon } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import "../style/Map.css";
+import "../style/components/Map.css";
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
 import dummyData from "../data/dummy";

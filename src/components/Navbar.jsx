@@ -1,5 +1,5 @@
 import companyLogo from "../public/img/logo.png";
-import "../style/Navbar.css";
+import "../style/components/Navbar.css";
 
 function Navbar() {
   return (

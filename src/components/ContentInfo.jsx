@@ -1,10 +1,10 @@
-import "../style/Dashboard.css";
+import "../style/pages/Dashboard.css";
 import profilePict from "../public/img/profilePict.png";
 import rumah from "../public/img/rumah.png";
 import kantor from "../public/img/kantor.png";
 import pabrik from "../public/img/pabrik.png";
 import { ArrowRight } from "react-bootstrap-icons";
-import "../style/ContentInfo.css";
+import "../style/components/ContentInfo.css";
 
 function ContentInfoUmum() {
   return (
