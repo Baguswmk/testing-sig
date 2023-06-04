@@ -22,7 +22,7 @@ function ContentInfoUmum() {
             pemetaan, dan analisis data geografis sesuai kebutuhan.
           </p>
 
-          <a href="#" className="btnSelengkapnya">
+          <a href="/dashboard/:{id}" className="btnSelengkapnya">
             Selengkapnya <ArrowRight />
           </a>
         </div>

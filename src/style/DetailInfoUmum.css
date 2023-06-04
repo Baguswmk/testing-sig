@@ -1,0 +1,90 @@
+.wrapper-detail {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+.wrapper-detail .arrow-back {
+  width: 5%;
+}
+
+.header-detail svg {
+  float: left;
+  width: 50px;
+  margin: 10px 0 0 -80px;
+  height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper-detail .container-detail {
+  width: 75%;
+  height: 100vh;
+  margin: 100px 20px 0 20px;
+}
+.card-detail {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.header-detail {
+  margin-bottom: 20px;
+}
+
+.header-detail h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+.img-detail {
+  max-width: 400px;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 16px;
+}
+
+.slider-detail {
+  width: 100%;
+  padding: 30px;
+  margin: 20px auto;
+}
+.slick-list {
+  margin: 0 20px 0 20px;
+}
+
+.detail-deskripsi {
+  text-align: justify;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.detail-deskripsi p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-top: 30px;
+}
+.warpper-detail .sidebarDash {
+  width: 25%;
+}
+
+#btn4 {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+#btn4 svg {
+  margin-top: -3px;
+}
+
+#btn4:hover {
+  background-color: var(--secondary-color);
+  color: #000;
+  transition: all 0.3s ease;
+}

@@ -4,7 +4,7 @@ import "../style/Map.css";
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
 import dummyData from "../data/dummy";
-function App() {
+function Map() {
   const [data, setData] = useState(null);
   useEffect(() => {
     setData(dummyData);
@@ -55,4 +55,4 @@ const MapComponent = () => {
   );
 };
 
-export default App;
+export default Map;

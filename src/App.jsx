@@ -8,6 +8,7 @@ import HubungiKami from "./pages/HubungiKami.jsx";
 import Login from "./pages/LoginPage.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import Map from "./components/Map.jsx";
+import DetailInfoUmum from "./pages/DetailInfoUmum.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard/:{id}" element={<DetailInfoUmum />} />
         <Route path="/datalahan" element={<DataLahan />} />
         <Route path="/databangunan" element={<DataBangunan />} />
         <Route path="/tentangkami" element={<TentangKami />} />
