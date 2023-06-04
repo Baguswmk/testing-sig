@@ -3,9 +3,7 @@ import "../style/Footer.css";
 function Footer() {
   return (
     <footer>
-      &copy; Copyright. All Rights Reserved
-      <br />
-      Designed by Kelompok 2 SIG
+      <div className="footer-content">&copy; Copyright. All Rights Reserved Designed by Kelompok 2 SIG</div>
     </footer>
   );
 }
