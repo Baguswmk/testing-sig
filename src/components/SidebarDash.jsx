@@ -16,19 +16,19 @@ const SidebarDashboard = () => {
         <h2>Fasilitas Umum</h2>
         <ul>
           <li>
-            <a href="">Masjid</a>
+            <a href="/fasilitasumum">Masjid</a>
           </li>
           <li>
-            <a href="">Sekolah Dasar</a>
+            <a href="/fasilitasumum">Sekolah Dasar</a>
           </li>
           <li>
-            <a href="">SMP</a>
+            <a href="/fasilitasumum">SMP</a>
           </li>
           <li>
-            <a href="">Toilet</a>
+            <a href="/fasilitasumum">Toilet</a>
           </li>
           <li>
-            <a href="">Lainnya</a>
+            <a href="/fasilitasumum">Lainnya</a>
           </li>
         </ul>
       </div>
