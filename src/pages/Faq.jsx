@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, ChevronDown, ChevronRight } from "react-bootstrap-icons";
 import SidebarDashboard from "../components/SidebarDash";
-import ErrorPage from "./ErrorPage";
+// import ErrorPage from "./ErrorPage";
 import "../style/pages/Faq.css";
 
 function Faq() {
