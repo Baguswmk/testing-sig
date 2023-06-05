@@ -1,5 +1,5 @@
 import "../style/pages/Dashboard.css";
-import companyLogo from "../public/img/logo.png";
+import companyLogo from "../public/img/logo.webp";
 import profilePict from "../public/img/profilePict.png";
 import { ChevronRight, PencilSquare, BoxArrowRight, ChevronDown } from "react-bootstrap-icons";
 import { useState } from "react";

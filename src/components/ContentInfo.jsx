@@ -1,8 +1,8 @@
 import "../style/pages/Dashboard.css";
 import profilePict from "../public/img/profilePict.png";
-import rumah from "../public/img/rumah.png";
-import kantor from "../public/img/kantor.png";
-import pabrik from "../public/img/pabrik.png";
+import rumah from "../public/img/rumah.webp";
+import kantor from "../public/img/kantor.webp";
+import pabrik from "../public/img/pabrik.webp";
 import { ArrowRight } from "react-bootstrap-icons";
 import "../style/components/ContentInfo.css";
 

@@ -5,6 +5,7 @@ function HubungiKami() {
   return (
     <>
       <Navbar />
+      
       <Footer />
     </>
   );

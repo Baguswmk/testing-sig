@@ -1,4 +1,4 @@
-import companyLogo from "../public/img/logo.png";
+import companyLogo from "../public/img/logo.webp";
 import "../style/components/Navbar.css";
 
 function Navbar() {

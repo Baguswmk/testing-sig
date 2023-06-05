@@ -4,7 +4,7 @@ body {
 
 /* Main */
 .main {
-  background-image: url("../../public/img/bg.png");
+  background-image: url("../../public/img/bg.webp");
   background-size: initial;
   background-position: center;
   position: relative;

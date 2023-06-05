@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../style/pages/Home.css";
-import heroPict from "../public/img/hero.png";
+import heroPict from "../public/img/hero.webp";
 
 function Home() {
   return (

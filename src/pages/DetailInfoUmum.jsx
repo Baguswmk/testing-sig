@@ -2,8 +2,8 @@ import SidebarDashboard from "../components/SidebarDash";
 import { useParams, useNavigate } from "react-router-dom";
 import ErrorPage from "./ErrorPage";
 import ProfilPict from "../public/img/profilePict.png";
-import kantor from "../public/img/kantor.png";
-import Rumah from "../public/img/rumah.png";
+import kantor from "../public/img/kantor.webp";
+import Rumah from "../public/img/rumah.webp";
 import { ArrowLeft, GeoAlt } from "react-bootstrap-icons";
 
 import Slider from "react-slick";
