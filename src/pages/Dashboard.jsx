@@ -82,7 +82,7 @@ function Dashboard() {
               <BoxArrowRight />
             </button>
             <button id="btnHelp">
-              <p>Bantuan</p>
+              <a href="/faq">Bantuan</a>
             </button>
           </div>
 

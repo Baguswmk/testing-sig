@@ -1,11 +1,12 @@
 body {
-  font-family: var(--primary-font);
+  font-family: "Poppins" sans-serif;
 }
 
 /* Header */
 header {
   width: 100%;
   display: table;
+  font-family: "Poppins" sans-serif;
   background-color: #fff;
   box-shadow: var(--box-shadow);
 }
@@ -43,6 +44,7 @@ nav ul li:last-child {
 nav ul li a {
   text-decoration: none;
   color: #000;
+  font-family: "Poppins" sans-serif;
   font-size: 21px;
   padding: 20px 20px;
   display: inline-block;
@@ -77,6 +79,15 @@ button {
   margin: 12px 20px 0 10px;
   border: 2px solid var(--primary-color);
   border-radius: 4px;
+}
+
+#btn1 a {
+  text-decoration: none;
+  color: #fff;
+}
+#btn2 a {
+  text-decoration: none;
+  color: #000;
 }
 
 #btn1 {

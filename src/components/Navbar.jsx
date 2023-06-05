@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <header>
       <section>
-        <a href="" id="logo" target="_blank">
+        <a href="/" id="logo" target="_blank">
           <img src={companyLogo} alt="ptpn7" className="imgNav" />
         </a>
         <label htmlFor="toggle-1" className="toggle-menu">
@@ -28,8 +28,12 @@ function Navbar() {
             <li>
               <a href="/tentangkami">Tentang Kami</a>
             </li>
-            <button id="btn1">Hubungi Kami</button>
-            <button id="btn2">Bantuan</button>
+            <button id="btn1">
+              <a href="/hubungikami"> Hubungi Kami</a>
+            </button>
+            <button id="btn2">
+              <a href="/faq">Bantuan</a>
+            </button>
           </ul>
         </nav>
       </section>

@@ -144,7 +144,8 @@ body {
   font-size: 20px;
 }
 
-#btnHelp p {
+#btnHelp a {
+  color: #000;
   margin-left: 10px;
 }
 
