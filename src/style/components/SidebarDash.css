@@ -1,0 +1,65 @@
+.sidebarDash {
+  flex-basis: 25%;
+  background-color: var(--secondary-color);
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+  height: calc(100vh + 330px);
+}
+
+.headerRightSide {
+  margin: 100px 0 20px 20px;
+}
+.headerRightSide h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: Bold;
+}
+.headerRightSide h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.search {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+.search input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border: 1px solid #212a3e;
+}
+
+.search input[type="text"]::placeholder {
+  color: #999;
+}
+
+.fasilitasUmum,
+.faq {
+  margin: 25px;
+}
+.fasilitasUmum ul,
+.faq ul {
+  list-style: none;
+}
+.fasilitasUmum li,
+.faq li {
+  margin: 5px 0 10px 20px;
+}
+.fasilitasUmum ul li a,
+.faq ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.fasilitasUmum ul li a:hover,
+.faq ul li a:hover {
+  text-decoration: underline;
+}
