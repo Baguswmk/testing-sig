@@ -9,6 +9,7 @@ import Login from "./pages/LoginPage.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import Map from "./components/Map.jsx";
 import DetailInfoUmum from "./pages/DetailInfoUmum.jsx";
+import Faq from "./pages/Faq.jsx";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/databangunan" element={<DataBangunan />} />
         <Route path="/tentangkami" element={<TentangKami />} />
         <Route path="/hubungikami" element={<HubungiKami />} />
+        <Route path="/faq" element={<Faq />} />
         <Route path="/login" element={<Login />} />
         <Route path="/map" element={<Map />} />
         <Route path="*" element={<ErrorPage />} />

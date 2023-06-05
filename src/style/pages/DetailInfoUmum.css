@@ -1,7 +1,11 @@
+body {
+  font-family: var(--primary-font);
+}
 .wrapper-detail {
   display: flex;
   height: 100vh;
   width: 100%;
+  font-family: "Poppins" sans-serif;
 }
 .wrapper-detail .arrow-back {
   width: 5%;

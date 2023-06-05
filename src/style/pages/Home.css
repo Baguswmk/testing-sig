@@ -1,6 +1,5 @@
 body {
-  font-family: var(--primary-font);
-  font-family: var(--secondary-font);
+  font-family: "Poppins" sans-serif;
 }
 
 /* Main */
@@ -12,6 +11,7 @@ body {
   width: 100%;
   height: calc(100vh - 177px);
   margin: 0;
+  font-family: "Poppins" sans-serif;
 }
 
 /* Container */

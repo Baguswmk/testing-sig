@@ -1,3 +1,4 @@
+
 .error-container {
   display: flex;
   flex-direction: column;
@@ -6,6 +7,7 @@
   height: 100vh;
   font-family: Arial, sans-serif;
   text-align: center;
+  font-family: "Poppins" sans-serif;
 }
 
 .error-container h1 {

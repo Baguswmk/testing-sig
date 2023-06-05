@@ -37,15 +37,15 @@ const SidebarDashboard = () => {
         <h2>FAQ</h2>
         <ul>
           <li>
-            <a href="">Cara keluar website</a>
+            <a href="/faq">Cara keluar website</a>
           </li>
           <li>
             {" "}
-            <a href="">Cara mengganti sandi</a>
+            <a href="/faq">Cara mengganti sandi</a>
           </li>
           <li>
             {" "}
-            <a href="">Cara mencari lokasi</a>
+            <a href="/faq">Cara mencari lokasi</a>
           </li>
         </ul>
       </div>
