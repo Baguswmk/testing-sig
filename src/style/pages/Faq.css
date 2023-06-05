@@ -17,8 +17,7 @@
 
 .wrapper-faq .container-faq {
   width: 75%;
-  height: 100vh;
-  margin: 100px 20px 0 20px;
+  margin: 80px 20px 0 20px;
 }
 
 .header-faq {
@@ -35,12 +34,12 @@
 
 .card-faq {
   width: 60%;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .faq-content {
   text-align: justify;
-  padding: 4px 10px;
+  padding: 30px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   margin-bottom: 20px;

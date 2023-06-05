@@ -10,6 +10,11 @@ import ErrorPage from "./pages/ErrorPage.jsx";
 import Map from "./components/Map.jsx";
 import DetailInfoUmum from "./pages/DetailInfoUmum.jsx";
 import Faq from "./pages/Faq.jsx";
+import Masjid from "./components/Fasilitasumum/Masjid.jsx";
+import SekolahDasar from "./components/Fasilitasumum/SekolahDasar.jsx";
+import SMP from "./components/Fasilitasumum/Smp.jsx";
+import Toilet from "./components/Fasilitasumum/Toilet.jsx";
+import FasilitasLainnya from "./components/Fasilitasumum/FasilitasLainnya.jsx";
 
 function App() {
   return (
@@ -22,6 +27,11 @@ function App() {
         <Route path="/databangunan" element={<DataBangunan />} />
         <Route path="/tentangkami" element={<TentangKami />} />
         <Route path="/hubungikami" element={<HubungiKami />} />
+        <Route path="/fasilitasumum/masjid" element={<Masjid />} />
+        <Route path="/fasilitasumum/sekolahdasar" element={<SekolahDasar />} />
+        <Route path="/fasilitasumum/smp" element={<SMP />} />
+        <Route path="/fasilitasumum/toilet" element={<Toilet />} />
+        <Route path="/fasilitasumum/lainnya" element={<FasilitasLainnya />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/login" element={<Login />} />
         <Route path="/map" element={<Map />} />

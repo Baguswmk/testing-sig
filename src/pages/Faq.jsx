@@ -106,7 +106,7 @@ function Dropdown({ index, isOpen, onClick, onClickOutside, question, children }
 
   return (
     <>
-      <p className="faq" onClick={handleContext}>
+      <p onClick={handleContext}>
         {question} {isOpen ? <ChevronDown /> : <ChevronRight />}
       </p>
       {isOpen && (

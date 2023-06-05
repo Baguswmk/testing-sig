@@ -1,8 +1,8 @@
 .sidebarDash {
   flex-basis: 25%;
   background-color: var(--secondary-color);
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
-  height: calc(100vh + 330px);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  height: calc(100vh + 60vh);
 }
 
 .headerRightSide {
@@ -62,13 +62,4 @@
 .fasilitasUmum ul li a:hover,
 .faq ul li a:hover {
   text-decoration: underline;
-}
-
-.fasilitasUmum {
-  bottom: auto;
-  position: absolute;
-}
-.faq {
-  bottom: 0;
-  position: absolute;
 }
