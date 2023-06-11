@@ -90,14 +90,71 @@ button {
   text-decoration: underline;
 }
 
-/* Handphone */
+/* Monitor */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  /* CSS untuk monitor */
+  .container {
+    padding-top: 50px;
+  }
+  .hero h1 {
+    font-size: 34px;
+  }
+  .hero {
+    margin: 0 30px 0 auto;
+  }
+  .content {
+    width: 80%;
+    margin-top: 0;
+  }
+  .content p {
+    max-width: 400px;
+  }
+  .content img {
+    width: 350px;
+    height: 350px;
+    margin-right: -70px;
+  }
+  .footer-content {
+    width: 90%;
+  }
+}
 
-@media (max-width: 767px) {
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* CSS untuk tablet */
+  .main {
+    height: calc(100vh - 5px);
+  }
+  .container {
+    padding-top: 50px;
+  }
+  .hero {
+    margin-right: 50px;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .content {
+    width: 90%;
+  }
+  .content p {
+    font-size: 20px;
+    margin-top: 100px;
+    width: 50%;
+  }
+  .content img {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+  }
+}
+
+/* Handphone */
+@media (min-width: 577px) and (max-width: 767px) {
   /* CSS untuk handphone */
   .main {
     height: 800px;
   }
-
   .container {
     padding: 20px;
   }
@@ -118,7 +175,6 @@ button {
     margin-top: 30px;
     flex-direction: column;
   }
-
   .content p {
     font-size: 18px;
     padding-top: 30px;
@@ -138,64 +194,53 @@ button {
   }
 }
 
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* CSS untuk tablet */
-  .main {
-    height: calc(100vh - 5px);
+@media (max-width: 576px) {
+  .hero h1 {
+    color: #fff;
   }
   .container {
-    padding-top: 50px;
-  }
-  .hero {
-    margin-right: 50px;
-  }
-  .hero h1 {
-    font-size: 36px;
+    justify-content: center;
   }
   .content {
-    width: 90%;
+    width: 85%;
+    margin-top: 30px;
+    flex-direction: column;
   }
-  .content p {
-    font-size: 20px;
-    margin-top: 100px;
-    width: 50%;
+  .hero {
+    margin: 0;
+  }
+  .hero h1 {
+    font-size: 24px;
+    text-align: center;
   }
   .content img {
-    width: 300px;
-    height: 300px;
-    margin: 0;
+    width: 200px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    order: -1;
+  }
+  .content p {
+    font-size: 18px;
   }
 }
 
-/* Monitor */
-@media (min-width: 1024px) and (max-width: 1440px) {
-  /* CSS untuk monitor */
-
+/* Handphone */
+@media (max-width: 375px) {
   .container {
-    padding-top: 50px;
-  }
-  .hero h1 {
-    font-size: 34px;
+    margin-left: -20px;
   }
   .hero {
-    margin: 0 30px 0 auto;
+    margin: 0;
   }
-  .content {
-    width: 80%;
-    margin-top: 0;
+  .hero h1 {
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    color: #fff;
   }
-
   .content p {
-    max-width: 400px;
-  }
-  .content img {
-    width: 350px;
-    height: 350px;
-    margin-right: -70px;
-  }
-
-  .footer-content {
-    width: 90%;
+    padding: 10px 0;
   }
 }

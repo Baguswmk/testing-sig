@@ -79,14 +79,14 @@ body {
   .container {
     padding: 20px;
   }
-  .hero {
+  .card {
     margin: 0 auto;
   }
   .main {
     background-size: inherit;
     background-position: initial;
   }
-  .hero h1 {
+  .card h1 {
     font-size: 28px;
     color: var(--secondary-color);
   }
@@ -128,10 +128,10 @@ body {
   .container {
     padding-top: 50px;
   }
-  .hero {
+  .card {
     margin-right: 50px;
   }
-  .hero h1 {
+  .card h1 {
     font-size: 36px;
   }
   .content-hubungi {
