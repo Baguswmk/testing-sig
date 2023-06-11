@@ -10,11 +10,11 @@ import ErrorPage from "../pages/ErrorPage.jsx";
 import Map from "../components/Map.jsx";
 import DetailInfoUmum from "../pages/DetailInfoUmum.jsx";
 import Faq from "../pages/Faq.jsx";
-import Masjid from "../components/Fasilitasumum/Masjid.jsx";
-import SekolahDasar from "../components/Fasilitasumum/SekolahDasar.jsx";
-import SMP from "../components/Fasilitasumum/Smp.jsx";
-import Toilet from "../components/Fasilitasumum/Toilet.jsx";
-import FasilitasLainnya from "../components/Fasilitasumum/FasilitasLainnya.jsx";
+import Masjid from "../components/fasilitasumum/Masjid.jsx";
+import SekolahDasar from "../components/fasilitasumum/SekolahDasar.jsx";
+import SMP from "../components/fasilitasumum/Smp.jsx";
+import Toilet from "../components/fasilitasumum/Toilet.jsx";
+import FasilitasLainnya from "../components/fasilitasumum/FasilitasLainnya.jsx";
 
 function urlParse() {
   return (
