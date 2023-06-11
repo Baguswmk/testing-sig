@@ -20,13 +20,13 @@ function Navbar() {
               <a href="/dashboard">Dashboard</a>
             </li>
             <li>
-              <a href="/datalahan">Data Lahan</a>
-            </li>
-            <li>
-              <a href="/databangunan">Data Bangunan</a>
+              <a href="/datakawasan">Fasilitas</a>
             </li>
             <li>
               <a href="/tentangkami">Tentang Kami</a>
+            </li>
+            <li>
+              <a href="/faq">Faq</a>
             </li>
             <button id="btn1">
               <a href="/hubungikami"> Hubungi Kami</a>

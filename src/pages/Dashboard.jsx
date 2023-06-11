@@ -2,29 +2,39 @@ import "../style/pages/Dashboard.css";
 import companyLogo from "../public/img/logo.webp";
 import profilePict from "../public/img/profilePict.png";
 import { ChevronRight, PencilSquare, BoxArrowRight, ChevronDown } from "react-bootstrap-icons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SliderComponent from "../components/Slider";
 import SidebarDashboard from "../components/SidebarDash.jsx";
+import Preloader from "../components/Preloader";
 
 function Dashboard() {
-  const [isOpenLahan, setIsOpenLahan] = useState(false);
-  const [isOpenBangunan, setIsOpenBangunan] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isOpenKawasan, setIsOpenKawasan] = useState(false);
 
-  const handleContextMenuLahan = (e) => {
+  const handleContextMenuKawasan = (e) => {
     e.preventDefault();
-    setIsOpenLahan(!isOpenLahan);
-  };
-
-  const handleContextMenuBangunan = (e) => {
-    e.preventDefault();
-    setIsOpenBangunan(!isOpenBangunan);
+    setIsOpenKawasan(!isOpenKawasan);
   };
 
   const handleClickOutside = () => {
-    setIsOpenLahan(false);
-    setIsOpenBangunan(false);
+    setIsOpenKawasan(false);
   };
 
+  useEffect(() => {
+    // Simulasikan penundaan dengan timeout
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    // Membersihkan timeout saat komponen diunmount
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []);
+
+  if (isLoading) {
+    return <Preloader />;
+  }
   return (
     <>
       <div className="containerDash">
@@ -52,22 +62,23 @@ function Dashboard() {
               <a href="">Peta Umum</a>
             </li>
             <div className="dataLeft">
-              <p className="dataLahan" onClick={handleContextMenuLahan}>
-                Data Lahan {isOpenLahan ? <ChevronDown /> : <ChevronRight />}
+              <p className="dataLahan" onClick={handleContextMenuKawasan}>
+                Data Kawasan {isOpenKawasan ? <ChevronDown /> : <ChevronRight />}
               </p>
-              {isOpenLahan && (
+              {isOpenKawasan && (
                 <div className="menuContent" onClick={handleClickOutside}>
-                  <a href="#">Menu Item 1</a>
-                </div>
-              )}
-            </div>
-            <div className="dataLeft">
-              <p className="dataBangunan" onClick={handleContextMenuBangunan}>
-                Data Bangunan {isOpenBangunan ? <ChevronDown /> : <ChevronRight />}
-              </p>
-              {isOpenBangunan && (
-                <div className="menuContent" onClick={handleClickOutside}>
-                  <a href="#">Menu Item 1</a>
+                  <a href="/datakawasan/rayon-1">Rayon 1</a>
+                  <br />
+                  <a href="#">Rayon 2</a>
+                  <br />
+
+                  <a href="#">Rayon 3</a>
+                  <br />
+
+                  <a href="#">Rayon 4</a>
+                  <br />
+
+                  <a href="/datakawasan/Office-center">Office Center</a>
                 </div>
               )}
             </div>

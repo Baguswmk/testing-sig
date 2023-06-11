@@ -4,6 +4,9 @@
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   height: calc(100vh + 60vh);
 }
+.menuToggle {
+  margin-top: -70px;
+}
 
 .headerRightSide {
   margin: 100px 0 20px 20px;
@@ -38,6 +41,12 @@
 .search input[type="text"]::placeholder {
   color: #999;
 }
+.fasilitasUmum li a svg,
+.faq li a svg {
+  color: var(--primary-color);
+  float: left;
+  margin-left: -40px;
+}
 
 .fasilitasUmum,
 .faq {
@@ -49,7 +58,7 @@
 }
 .fasilitasUmum li,
 .faq li {
-  margin: 5px 0 10px 20px;
+  margin: 10px 0 10px 50px;
 }
 .fasilitasUmum ul li a,
 .faq ul li a {
@@ -62,4 +71,48 @@
 .fasilitasUmum ul li a:hover,
 .faq ul li a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 980px) {
+  .sidebarDash {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Menggeser sidebar keluar dari layar */
+    width: 300px;
+    height: 100%;
+    transition: left 0.3s;
+  }
+
+  .menuOpen.sidebarDash {
+    right: 0; /* Menggeser sidebar ke dalam layar */
+  }
+
+  .menuToggle {
+    margin-left: -50px;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    width: 25px;
+    transition: 0.4s;
+  }
+
+  .menuOpen .hamburger {
+    transform: rotate(-90deg);
+  }
+
+  .menuOpen .hamburger:before,
+  .menuOpen .hamburger:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  .menuOpen .hamburger:before {
+    transform: translateY(8px);
+  }
+
+  .menuOpen .hamburger:after {
+    transform: translateY(-8px);
+  }
 }

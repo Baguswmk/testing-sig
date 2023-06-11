@@ -1,0 +1,79 @@
+.wrapper-datkaw {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins" sans-serif;
+}
+
+.header-datkaw svg {
+  float: left;
+  width: 50px;
+  margin: 10px 0 0 -80px;
+  height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper-datkaw .container-datkaw {
+  width: 75%;
+  margin: 80px 20px 0 20px;
+}
+
+.header-datkaw {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.header-datkaw h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+}
+
+.card-datkaw {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto 50px auto;
+}
+.card-datkaw h1 {
+  margin: 0 auto 30px auto;
+}
+
+.leaflet-container {
+  border: #000 1px solid;
+  border-radius: 8px;
+  width: 70%;
+  height: 500px;
+}
+.img-datkaw {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 50px auto;
+}
+
+.img-datkaw img {
+  width: 524px;
+  height: 333px;
+  border-radius: 8px;
+}
+
+.content-datkaw {
+  margin: 0 auto;
+  width: 85%;
+}
+
+.content-datkaw p {
+  text-align: justify;
+  font-family: "Poppins" sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.content-datkaw #btn4 {
+  margin-bottom: 50px;
+}
+

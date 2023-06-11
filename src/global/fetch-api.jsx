@@ -1,13 +1,26 @@
 import axios from "axios";
+import config from "./config";
 
-async function fetchData() {
+const baseUrl = config.baseUrl;
+
+const getAllData = async () => {
   try {
-    const response = await axios.get("https://api.example.com/data");
+    const response = await axios.get(baseUrl);
     const data = response.data;
-    // Lakukan sesuatu dengan data yang diambil
+    console.log(data);
   } catch (error) {
-    console.error(error);
+    console.log(error);
   }
-}
+};
 
-export default fetchData;
+const getDataById = async (id) => {
+  try {
+    const response = await axios.get(`${baseUrl}/${id}`);
+    return response.data;
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+};
+
+export { getAllData, getDataById };

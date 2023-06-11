@@ -72,11 +72,11 @@ svg {
 }
 
 #loginBtn {
+  display: flex;
+  justify-content: center;
   background-color: var(--primary-color);
   color: var(--secondary-color);
   width: 70%;
-  justify-content: center;
-  display: flex;
   margin: 25px auto;
 }
 
@@ -85,4 +85,16 @@ svg {
   color: #000;
   text-decoration: underline;
   transition: all 0.3s ease-in-out;
+}
+
+#registerBtn {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 25px auto;
+  text-decoration: none;
+}
+
+#registerBtn:hover {
+  text-decoration: underline;
 }
