@@ -6,10 +6,17 @@ import { useState, useEffect } from "react";
 import SliderComponent from "../components/Slider";
 import SidebarDashboard from "../components/SidebarDash.jsx";
 import Preloader from "../components/Preloader";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 
 function Dashboard() {
   const [isLoading, setIsLoading] = useState(true);
   const [isOpenKawasan, setIsOpenKawasan] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
 
   const handleContextMenuKawasan = (e) => {
     e.preventDefault();
@@ -36,10 +43,15 @@ function Dashboard() {
     return <Preloader />;
   }
   return (
-    <>
       <div className="containerDash">
         {/* Content kiri */}
-        <aside className="leftSidebarDash">
+        <aside className={`leftSidebarDash ${isSidebarOpen ? "showSidebar" : ""}`}>
+          <div className="menuToggleLeft" onClick={toggleSidebar}>
+            <div className="hamburgerLeft">
+              <FontAwesomeIcon icon={faBarsStaggered} />
+            </div>
+          </div>
+
           <div className="logoDash">
             <a href="/">
               <img src={companyLogo} alt="" className="companyLogo" />
@@ -109,7 +121,6 @@ function Dashboard() {
         {/* Content kanan */}
         <SidebarDashboard />
       </div>
-    </>
   );
 }
 export default Dashboard;

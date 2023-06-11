@@ -10,6 +10,9 @@ body {
   scrollbar-color: transparent transparent;
   font-family: "Poppins" sans-serif;
 }
+.hamburgerLeft {
+  overflow: hidden;
+}
 
 .contentDash::-webkit-scrollbar {
   width: 6px;
@@ -152,3 +155,102 @@ body {
 /* Center Dash */
 
 /* Right Sidebar Dash */
+
+@media (max-width: 576px) {
+  /* CSS untuk handphone */
+  .leftSidebarDash {
+    max-width: 250px;
+  }
+  .buttonDash {
+    margin-left: 50px;
+  }
+  .round-image {
+    width: 150px;
+    height: 150px;
+  }
+  #btnLogout,
+  #btnHelp {
+    width: 150px;
+  }
+  #btnLogout a {
+    margin-left: -30px;
+  }
+  #btnHelp a {
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* CSS untuk handphone */
+  .buttonDash {
+    margin-left: 50px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+ 
+  .round-image {
+    width: 150px;
+    height: 150px;
+  }
+  .buttonDash {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* CSS untuk tablet */
+  .leftSidebarDash {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Menggeser sidebar keluar dari layar */
+    width: 300px;
+    height: 100%;
+    transition: left 0.3s;
+    z-index: 9999;
+  }
+
+  .showSidebar.leftSidebarDash {
+    left: 0; /* Menggeser sidebar ke dalam layar */
+  }
+
+  .menuToggleLeft {
+    margin-left: 300px;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+
+  .hamburgerLeft {
+    overflow: visible;
+    width: 25px;
+    transition: 0.4s;
+    transform: scaleX(-1);
+  }
+
+  .showSidebar .hamburgerLeft {
+    transform: rotate(270deg);
+  }
+
+  .showSidebar .hamburgerLeft:before,
+  .showSidebar .hamburgerLeft:after {
+    top: 0;
+    transform: rotate(-90deg);
+  }
+
+  .showSidebar .hamburgerLeft:before {
+    transform: translateY(8px);
+  }
+
+  .showSidebar .hamburgerLeft:after {
+    transform: translateY(-8px);
+  }
+}
+
+/* Monitor */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  /* CSS untuk monitor */
+  .buttonDash {
+    margin-left: 30px;
+  }
+}

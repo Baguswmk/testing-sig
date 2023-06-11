@@ -89,3 +89,144 @@ body {
   color: #000;
   transition: all 0.3s ease;
 }
+
+/* Monitor */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  /* CSS untuk monitor */
+  .cardInfo {
+    flex-direction: column;
+    width: 400px;
+    margin: 20px auto;
+  }
+  .cardImage img {
+    margin: 20px auto;
+    width: 300px;
+    height: 150px;
+  }
+  .wrapperMapInfo {
+    margin: 50px auto;
+    width: 400px;
+  }
+  .cardContent p {
+    margin-top: 0;
+  }
+  .btnSelengkapnya {
+    margin-bottom: 10px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS untuk tablet */
+  .headerDash,
+  .headerMap {
+    display: flex;
+    justify-content: center;
+  }
+  .headerDash h1,
+  .headerMap h1 {
+    font-size: 36px;
+  }
+  .infoHeader {
+    display: flex;
+    justify-content: center;
+  }
+  .infoHeader h1 {
+    margin: 30px;
+  }
+  .cardInfo {
+    flex-direction: column;
+    width: 600px;
+    margin: 20px auto;
+  }
+  .cardImage img {
+    margin: 20px auto;
+  }
+  .wrapperMapInfo {
+    margin: 50px auto;
+    width: 600px;
+  }
+  .cardContent p {
+    margin-top: 0;
+  }
+  .btnSelengkapnya {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  /* CSS untuk handphone dengan lebar layar antara 577px dan 767px */
+  .headerDash,
+  .headerMap {
+    display: flex;
+    justify-content: center;
+  }
+  .headerDash h1,
+  .headerMap h1 {
+    font-size: 36px;
+  }
+  .infoHeader {
+    display: flex;
+    justify-content: center;
+  }
+  .infoHeader h1 {
+    margin: 30px;
+  }
+  .cardInfo {
+    flex-direction: column;
+    width: 450px;
+    margin: 20px auto;
+  }
+  .cardImage img {
+    margin: 20px auto;
+  }
+  .wrapperMapInfo {
+    margin: 50px auto;
+    width: 450px;
+  }
+  .cardContent p {
+    margin-top: 0;
+  }
+  .btnSelengkapnya {
+    margin-bottom: 10px;
+  }
+}
+
+/* Handphone */
+@media (max-width: 576px) {
+  /* CSS untuk handphone */
+  .headerDash,
+  .headerMap {
+    display: flex;
+    justify-content: center;
+  }
+  .headerDash h1,
+  .headerMap h1 {
+    font-size: 36px;
+  }
+  .infoHeader {
+    display: flex;
+    justify-content: center;
+  }
+  .infoHeader h1 {
+    margin: 30px;
+  }
+  .cardInfo {
+    flex-direction: column;
+    width: 450px;
+    margin: 20px 0 20px 20px;
+  }
+  .cardImage img {
+    margin: 20px auto;
+  }
+  .wrapperMapInfo {
+    margin: 50px auto;
+    width: 450px;
+  }
+  .cardContent p {
+    margin-top: 0;
+  }
+  .btnSelengkapnya {
+    margin-bottom: 10px;
+  }
+}
