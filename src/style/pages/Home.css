@@ -28,7 +28,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 40px;
   font-family: "Poppins" sans-serif;
 }
 
@@ -110,6 +110,7 @@ button {
   }
   .hero h1 {
     font-size: 28px;
+    text-align: center;
     color: var(--secondary-color);
   }
   .content {

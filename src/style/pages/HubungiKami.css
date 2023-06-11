@@ -90,25 +90,29 @@ body {
     font-size: 28px;
     color: var(--secondary-color);
   }
-  .content {
+  .content-hubungi {
     width: 85%;
     margin-top: 30px;
     flex-direction: column;
   }
 
-  .content p {
+  .content-hubungi p {
     font-size: 18px;
     padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
-  .content img {
+  .content-hubungi img {
     width: 250px;
-    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     height: 250px;
     order: -1;
+    border: none;
+  }
+  .card {
+    margin-top: 50px;
+    width: 100%;
   }
   #btn3 {
     margin-top: 10px;
@@ -130,22 +134,40 @@ body {
   .hero h1 {
     font-size: 36px;
   }
-  .content {
+  .content-hubungi {
     width: 90%;
   }
-  .content p {
+  .content-hubungi p {
     font-size: 20px;
-    margin-top: 100px;
-    width: 50%;
+    width: 100%;
   }
-  .content img {
-    width: 300px;
-    height: 300px;
-    margin: 0;
+  .content-hubungi img {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    border: none;
+  }
+  .card h1 {
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 80px auto 0 auto;
+    width: 90%;
   }
 }
 
 /* Monitor */
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   /* CSS untuk monitor */
+  .content-hubungi {
+    width: 100%;
+  }
+  .content-hubungi img {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    border: none;
+  }
 }
