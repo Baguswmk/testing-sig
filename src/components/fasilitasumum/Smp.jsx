@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { ArrowLeft, GeoAlt } from "react-bootstrap-icons";
 import SidebarDashboard from "../SidebarDash";
 import MasjidPict from "../../public/img/kantor.webp";
-import "../../style/components/Fasilitasumum/Masjid.css";
+import "../../style/components/fasilitasumum/Masjid.css";
 
 function SMP() {
   const navigate = useNavigate();
