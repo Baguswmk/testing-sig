@@ -228,9 +228,6 @@ button {
 
 /* Handphone */
 @media (max-width: 375px) {
-  .container {
-    margin-left: -20px;
-  }
   .hero {
     margin: 0;
   }
