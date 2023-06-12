@@ -1,5 +1,5 @@
 import "../style/components/MapInfo.css";
-import ErenYeager from "../public/img/profilePict.png";
+import PetaPict from "../public/img/peta.webp";
 import { ArrowRight } from "react-bootstrap-icons";
 
 const MapInfo = () => {
@@ -11,10 +11,10 @@ const MapInfo = () => {
       <div className="wrapperMapInfo">
         <div className="cardMapInfo">
           <div className="mapInfo">
-            <img src={ErenYeager} alt={ErenYeager} />
+            <img src={PetaPict} alt={PetaPict} />
           </div>
           <div className="selengkapnya">
-            <a href="/map" className="btnSelengkapnya">
+            <a href="https://goo.gl/maps/QfsceXMKB9BJVT579" target="blank" rel="noopener" className="btnSelengkapnya">
               Selengkapnya <ArrowRight />
             </a>
           </div>

@@ -20,14 +20,16 @@ function PetaUmum() {
           <h1>Peta Umum</h1>
         </div>
         <div className="card-fasum">
-          <div className="img-fasum">
-            <img src={PictPeta} alt={PictPeta} className="img-petaUmum" />
-          </div>
-          <div className="content-fasum">
-            <button id="btn4" onClick={handleButtonClicked}>
-              <GeoAlt />
-              Kunjungi lokasi peta
-            </button>
+          <div className="item-fasum">
+            <div className="img-fasum">
+              <img src={PictPeta} alt={PictPeta} className="img-petaUmum" />
+            </div>
+            <div className="content-fasum">
+              <button id="btn4" onClick={handleButtonClicked}>
+                <GeoAlt />
+                Kunjungi lokasi peta
+              </button>
+            </div>
           </div>
         </div>
       </div>

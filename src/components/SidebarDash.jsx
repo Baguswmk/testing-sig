@@ -74,9 +74,9 @@ const SidebarDashboard = () => {
       </div>
 
       <div className="search">
-        <form onSubmit={handleSearchSubmit}>
+        <form onSubmit={handleSearchSubmit} className="searchForm">
           <input type="text" placeholder="Cari Lokasi" value={searchQuery} onChange={handleSearch} />
-          <FontAwesomeIcon icon={faMagnifyingGlass} onClick={handleSearchSubmit} />
+          <FontAwesomeIcon className="searchIcon"icon={faMagnifyingGlass} onClick={handleSearchSubmit} />
         </form>
       </div>
 

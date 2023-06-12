@@ -1,52 +1,120 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/prop-types */
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { ArrowLeft, GeoAlt } from "react-bootstrap-icons";
+import { ArrowLeft, ChevronDown, ChevronRight } from "react-bootstrap-icons";
 import SidebarDashboard from "../SidebarDash";
-import MasjidPict from "../../public/img/kantor.webp";
-import "../../style/components/fasilitasumum/Masjid.css";
+// import ErrorPage from "./ErrorPage";
+import "../../style/pages/Faq.css";
 
 function FasilitasLainnya() {
+  //   const { id } = useParams();
+  //   const faq = dummyData.find((item) => item.id === Number(id));
+  //   if (!faq) {
+  //     return <ErrorPage />;
+  //   }
   const navigate = useNavigate();
-  const handleButtonClicked = () => {
-    window.open("/");
+  const [openIndexes, setOpenIndexes] = useState([]);
+
+  const handleClick = (index) => {
+    setOpenIndexes((prevOpenIndexes) => {
+      if (prevOpenIndexes.includes(index)) {
+        return prevOpenIndexes.filter((i) => i !== index);
+      } else {
+        return [...prevOpenIndexes, index];
+      }
+    });
+  };
+
+  const handleClickOutside = () => {
+    setOpenIndexes([]);
   };
 
   return (
-    <div className="wrapper-fasum">
-      <div className="container-fasum">
-        <div className="header-fasum">
-          {/* <h1>{fasum.title}</h1> */}
+    <div className="wrapper-faq">
+      <div className="container-faq">
+        <div className="header-faq">
+          {/* <h1>{faq.title}</h1> */}
           <a href="#" onClick={() => navigate(-1)}>
             <ArrowLeft />
           </a>
           <h1> Fasilitas Umum</h1>
         </div>
-        <div className="card-fasum">
-          <h1>SD N 1 Bungamayang</h1>
-          <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+        <div className="card-faq">
+          <div className="faq-content">
+            <Dropdown index={0} isOpen={openIndexes.includes(0)} onClick={handleClick} onClickOutside={handleClickOutside} question="Masjid">
+              <div className="faq-deskripsi">
+                <p>
+                  Untuk keluar dari sebuah website, Anda dapat mengikuti langkah-langkah berikut: <br />
+                  1. Tutup tab atau jendela browser yang sedang membuka website tersebut. <br />
+                  2. Gunakan tombol "Back" atau "Kembali" pada browser untuk kembali ke halaman sebelumnya. <br />
+                  3. Jika Anda menggunakan keyboard, tekan tombol "Alt + F4" (untuk Windows) atau "Command + W" (untuk Mac) untuk menutup jendela browser secara keseluruhan.
+                  <br />
+                  4. Jika menggunakan perangkat seluler, tekan tombol kembali atau navigasi yang sesuai pada perangkat Anda untuk keluar dari aplikasi atau halaman web. <br />
+                  5. Anda juga dapat menutup browser dengan mengklik ikon "X" yang terletak di pojok kanan atas jendela browser.
+                </p>
+              </div>
+            </Dropdown>
           </div>
-          <div className="content-fasum">
-            <p>
-              Masjid Al-Ikhlas di Desa Bungamayang adalah sebuah tempat ibadah yang menjadi pusat kegiatan keagamaan bagi umat Islam di wilayah tersebut. Masjid ini memiliki arsitektur yang indah dan menggambarkan tradisi Islam dalam
-              desainnya. Dengan atap yang menjulang tinggi dan menara yang menjadi ciri khasnya, masjid ini menjadi landmark yang mencolok di sekitar Desa Bungamayang.
-              <br />
-              <br />
-              Didirikan dengan tujuan untuk menyediakan tempat yang nyaman bagi umat Muslim dalam menjalankan ibadah mereka, Masjid Al-Ikhlas juga menawarkan berbagai fasilitas yang lengkap. Dalam kompleks masjid, terdapat ruang shalat yang
-              luas dan nyaman, dilengkapi dengan karpet yang indah dan fasilitas wudhu yang bersih. Selain itu, masjid ini juga memiliki ruang pertemuan untuk kegiatan komunitas dan pengajian agama.
-              <br />
-              <br />
-              Masjid Al-Ikhlas aktif mengadakan berbagai kegiatan keagamaan, seperti shalat berjamaah, kajian agama, dan pengajian anak-anak. Khutbah Jumat juga diadakan secara rutin untuk memberikan pemahaman dan inspirasi kepada jamaah.
-              Masjid ini menjadi tempat berkumpulnya umat Muslim Desa Bungamayang dalam menjalin silaturahmi dan meningkatkan pemahaman agama.
-            </p>
-            <button id="btn4" onClick={handleButtonClicked}>
-              <GeoAlt />
-              Kunjungi lokasi peta
-            </button>
+          <div className="faq-content">
+            <Dropdown index={1} isOpen={openIndexes.includes(1)} onClick={handleClick} onClickOutside={handleClickOutside} question="Sekolah">
+              <div className="faq-deskripsi">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque modi reiciendis qui, eaque corrupti officia unde atque debitis et, ipsum vitae sint iure nostrum quisquam velit esse, commodi harum ratione blanditiis
+                  mollitia obcaecati. Corrupti aut explicabo error earum ratione harum hic, quas veritatis, magnam autem quasi aperiam adipisci quidem asperiores laborum dolor. Assumenda, aperiam nam! Ipsam placeat esse quia illo magnam
+                  accusantium perferendis pariatur autem, sint vitae corporis nostrum repellendus veniam reprehenderit natus fuga tempore cupiditate! Facilis ducimus corporis tenetur ad, temporibus perferendis earum officiis modi magnam,
+                  quasi, ea libero harum cupiditate et eius nobis repudiandae! Expedita repellat suscipit magnam.
+                </p>
+              </div>
+            </Dropdown>
+          </div>
+          <div className="faq-content">
+            <Dropdown index={2} isOpen={openIndexes.includes(2)} onClick={handleClick} onClickOutside={handleClickOutside} question="Klinik">
+              <div className="faq-deskripsi">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque modi reiciendis qui, eaque corrupti officia unde atque debitis et, ipsum vitae sint iure nostrum quisquam velit esse, commodi harum ratione blanditiis
+                  mollitia obcaecati. Corrupti aut explicabo error earum ratione harum hic, quas veritatis, magnam autem quasi aperiam adipisci quidem asperiores laborum dolor. Assumenda, aperiam nam! Ipsam placeat esse quia illo magnam
+                  accusantium perferendis pariatur autem, sint vitae corporis nostrum repellendus veniam reprehenderit natus fuga tempore cupiditate! Facilis ducimus corporis tenetur ad, temporibus perferendis earum officiis modi magnam,
+                  quasi, ea libero harum cupiditate et eius nobis repudiandae! Expedita repellat suscipit magnam.
+                </p>
+              </div>
+            </Dropdown>
+          </div>
+          <div className="faq-content">
+            <Dropdown index={3} isOpen={openIndexes.includes(3)} onClick={handleClick} onClickOutside={handleClickOutside} question="Toilet">
+              <div className="faq-deskripsi">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque modi reiciendis qui, eaque corrupti officia unde atque debitis et, ipsum vitae sint iure nostrum quisquam velit esse, commodi harum ratione blanditiis
+                  mollitia obcaecati. Corrupti aut explicabo error earum ratione harum hic, quas veritatis, magnam autem quasi aperiam adipisci quidem asperiores laborum dolor. Assumenda, aperiam nam! Ipsam placeat esse quia illo magnam
+                  accusantium perferendis pariatur autem, sint vitae corporis nostrum repellendus veniam reprehenderit natus fuga tempore cupiditate! Facilis ducimus corporis tenetur ad, temporibus perferendis earum officiis modi magnam,
+                  quasi, ea libero harum cupiditate et eius nobis repudiandae! Expedita repellat suscipit magnam.
+                </p>
+              </div>
+            </Dropdown>
           </div>
         </div>
       </div>
       <SidebarDashboard />
     </div>
+  );
+}
+
+function Dropdown({ index, isOpen, onClick, onClickOutside, question, children }) {
+  const handleContext = () => {
+    onClick(index);
+  };
+
+  return (
+    <>
+      <p onClick={handleContext}>
+        {question} {isOpen ? <ChevronDown /> : <ChevronRight />}
+      </p>
+      {isOpen && (
+        <div className="menuContent" onClick={onClickOutside}>
+          {children}
+        </div>
+      )}
+    </>
   );
 }
 

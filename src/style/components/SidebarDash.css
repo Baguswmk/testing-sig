@@ -28,18 +28,29 @@
   display: flex;
   margin: 0 auto;
   margin-bottom: 20px;
-  max-width: 300px;
 }
 
 .search input[type="text"] {
   width: 100%;
   padding: 10px;
   border: none;
-  border: 1px solid #212a3e;
 }
 
 .search input[type="text"]::placeholder {
   color: #999;
+}
+.searchForm {
+  margin: 0 auto;
+  border: 1px solid #212a3e;
+  position: relative;
+  width: 300px;
+}
+
+.searchForm .searchIcon {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 20px;
+  z-index: 9999;
 }
 .fasilitasUmum li a svg,
 .faq li a svg {
@@ -81,7 +92,13 @@
   }
   .search input[type="text"] {
     margin: 0 auto;
-    max-width: 250px;
+  }
+  .searchForm {
+    width: 175px;
+  }
+
+  .searchForm .searchIcon {
+    margin-left: -30px;
   }
   .fasilitasUmum h2,
   .faq h2 {
@@ -99,13 +116,25 @@
 @media (max-width: 767px) {
   .search input[type="text"] {
     margin: 0 auto;
-    max-width: 250px;
+  }
+  .searchForm {
+    width: 250px;
+  }
+
+  .searchForm .searchIcon {
+    margin-left: -30px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .search input[type="text"] {
     margin: 0 auto;
-    max-width: 250px;
+  }
+  .searchForm {
+    width: 250px;
+  }
+
+  .searchForm .searchIcon {
+    margin-left: -30px;
   }
 }
 
@@ -129,6 +158,9 @@
     cursor: pointer;
   }
 
+  .searchForm .searchIcon {
+    margin-left: 0;
+  }
   .hamburger {
     width: 25px;
     transition: 0.4s;
@@ -168,7 +200,13 @@
   }
   .search input[type="text"] {
     margin: 0 auto;
-    max-width: 200px;
+  }
+  .searchForm {
+    width: 200px;
+  }
+
+  .searchForm .searchIcon {
+    margin-left: -30px;
   }
   .fasilitasUmum,
   .faq {
