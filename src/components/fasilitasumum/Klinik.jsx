@@ -8,7 +8,7 @@ import "../../style/components/fasilitasumum/Masjid.css";
 function SMP() {
   const navigate = useNavigate();
   const handleButtonClicked = () => {
-    window.open("/");
+    window.open("https://goo.gl/maps/vVbMQe78eV1QVNPRA");
   };
   return (
     <div className="wrapper-fasum">

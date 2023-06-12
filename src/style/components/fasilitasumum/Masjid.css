@@ -33,11 +33,18 @@
 }
 
 .card-fasum {
-  width: 60%;
+  width: 80%;
   margin: 0 auto 50px auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.item-fasum {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .card-fasum h1 {
   font-size: 30px;
+  margin-top: 20px;
   margin-left: 50px;
 }
 .img-fasum {
