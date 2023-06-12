@@ -6,6 +6,10 @@ import "../../style/components/fasilitasumum/Masjid.css";
 
 function FasilitasLainnya() {
   const navigate = useNavigate();
+  const handleButtonClicked = () => {
+    window.open("/");
+  };
+
   return (
     <div className="wrapper-fasum">
       <div className="container-fasum">
@@ -34,7 +38,7 @@ function FasilitasLainnya() {
               Masjid Al-Ikhlas aktif mengadakan berbagai kegiatan keagamaan, seperti shalat berjamaah, kajian agama, dan pengajian anak-anak. Khutbah Jumat juga diadakan secara rutin untuk memberikan pemahaman dan inspirasi kepada jamaah.
               Masjid ini menjadi tempat berkumpulnya umat Muslim Desa Bungamayang dalam menjalin silaturahmi dan meningkatkan pemahaman agama.
             </p>
-            <button id="btn4">
+            <button id="btn4" onClick={handleButtonClicked}>
               <GeoAlt />
               Kunjungi lokasi peta
             </button>

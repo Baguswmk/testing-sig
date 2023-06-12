@@ -6,6 +6,9 @@ import "../../style/components/fasilitasumum/Masjid.css";
 
 function Toilet() {
   const navigate = useNavigate();
+  const handleButtonClicked = () => {
+  window.open("https://goo.gl/maps/6Z1Z1Z1Z1Z1Z1Z1Z1");
+  }
   return (
     <div className="wrapper-fasum">
       <div className="container-fasum">
@@ -39,7 +42,7 @@ function Toilet() {
               tidur, lemari, meja kerja, dan kamar mandi pribadi. Fasilitas ini menawarkan kenyamanan dan privasi kepada para karyawan selama mereka tinggal di perkebunan. Lokasi MESS Karyawan di mudah diakses oleh para karyawan. Terletak
               di area yang strategis di dalam kompleks PTPN 7 Bunga Mayang, MESS ini memberikan akses yang nyaman dan dekat dengan tempat kerja serta fasilitas lainnya di dalam perkebunan.
             </p>
-            <button id="btn4">
+            <button id="btn4" onClick={handleButtonClicked}>
               <GeoAlt />
               Kunjungi lokasi peta
             </button>

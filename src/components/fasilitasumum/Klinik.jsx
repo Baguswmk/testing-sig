@@ -7,6 +7,9 @@ import "../../style/components/fasilitasumum/Masjid.css";
 
 function SMP() {
   const navigate = useNavigate();
+  const handleButtonClicked = () => {
+    window.open("/");
+  };
   return (
     <div className="wrapper-fasum">
       <div className="container-fasum">
@@ -31,7 +34,7 @@ function SMP() {
               Di dalam klinik terdapat ruang konsultasi yang dilengkapi dengan peralatan medis dan fasilitas yang diperlukan untuk pemeriksaan medis. Dokter dan tenaga medis yang berpengalaman hadir untuk memberikan pelayanan medis yang
               komprehensif dan peduli terhadap kebutuhan pasien.
             </p>
-            <button id="btn4">
+            <button id="btn4" onClick={handleButtonClicked}>
               <GeoAlt />
               Kunjungi lokasi peta
             </button>

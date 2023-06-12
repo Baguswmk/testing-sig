@@ -63,7 +63,7 @@ function Dashboard() {
 
         <ul>
           <li>
-            <a href="">Peta Umum</a>
+            <a href="/petaumum">Peta Umum</a>
           </li>
           <div className="dataLeft">
             <p className="dataLahan" onClick={handleContextMenuKawasan}>

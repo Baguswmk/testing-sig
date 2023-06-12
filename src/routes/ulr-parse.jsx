@@ -15,6 +15,7 @@ import Sekolah from "../components/Fasilitasumum/Sekolah.jsx";
 import Klinik from "../components/Fasilitasumum/Klinik.jsx";
 import Mess from "../components/Fasilitasumum/Mess.jsx";
 import FasilitasLainnya from "../components/fasilitasumum/FasilitasLainnya.jsx";
+import PetaUmum from "../components/PetaUmum.jsx";
 
 function urlParse() {
   return (
@@ -27,6 +28,7 @@ function urlParse() {
         <Route path="/datakawasan/office-center" element={<OfficeCenter />} />
         <Route path="/tentangkami" element={<TentangKami />} />
         <Route path="/hubungikami" element={<HubungiKami />} />
+        <Route path="/petaumum" element={<PetaUmum />} />
         <Route path="/fasilitasumum/masjid" element={<Masjid />} />
         <Route path="/fasilitasumum/sekolah" element={<Sekolah />} />
         <Route path="/fasilitasumum/klinik" element={<Klinik />} />
