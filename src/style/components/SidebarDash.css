@@ -133,6 +133,9 @@
     width: 25px;
     transition: 0.4s;
   }
+  .hamburger svg {
+    color: #f24c3d;
+  }
 
   .menuOpen .hamburger {
     transform: rotate(-90deg);
