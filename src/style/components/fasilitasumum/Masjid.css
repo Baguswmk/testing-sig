@@ -27,7 +27,7 @@
 }
 
 .header-fasum h1 {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 600;
   line-height: 72px;
 }
@@ -37,6 +37,7 @@
   margin: 0 auto 50px auto;
 }
 .card-fasum h1 {
+  font-size: 30px;
   margin-left: 50px;
 }
 .img-fasum {

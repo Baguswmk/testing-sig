@@ -36,8 +36,8 @@ body {
 }
 
 .header-detail h1 {
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 38px;
+  font-weight: 600;
   line-height: 72px;
 }
 
@@ -231,7 +231,7 @@ body {
   }
 }
 
-@media (min-width: 375px) and (max-width: 480px)  {
+@media (min-width: 375px) and (max-width: 480px) {
   .headerDash h1 {
     font-size: 30px;
   }

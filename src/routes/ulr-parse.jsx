@@ -10,10 +10,10 @@ import ErrorPage from "../pages/ErrorPage.jsx";
 import Map from "../components/Map.jsx";
 import DetailInfoUmum from "../pages/DetailInfoUmum.jsx";
 import Faq from "../pages/Faq.jsx";
-import Masjid from "../components/fasilitasumum/Masjid.jsx";
-import SekolahDasar from "../components/fasilitasumum/SekolahDasar.jsx";
-import SMP from "../components/fasilitasumum/Smp.jsx";
-import Toilet from "../components/fasilitasumum/Toilet.jsx";
+import Masjid from "../components/Fasilitasumum/Masjid.jsx";
+import Sekolah from "../components/Fasilitasumum/Sekolah.jsx";
+import Klinik from "../components/Fasilitasumum/Klinik.jsx";
+import Mess from "../components/Fasilitasumum/Mess.jsx";
 import FasilitasLainnya from "../components/fasilitasumum/FasilitasLainnya.jsx";
 
 function urlParse() {
@@ -28,9 +28,9 @@ function urlParse() {
         <Route path="/tentangkami" element={<TentangKami />} />
         <Route path="/hubungikami" element={<HubungiKami />} />
         <Route path="/fasilitasumum/masjid" element={<Masjid />} />
-        <Route path="/fasilitasumum/sekolahdasar" element={<SekolahDasar />} />
-        <Route path="/fasilitasumum/smp" element={<SMP />} />
-        <Route path="/fasilitasumum/toilet" element={<Toilet />} />
+        <Route path="/fasilitasumum/sekolah" element={<Sekolah />} />
+        <Route path="/fasilitasumum/klinik" element={<Klinik />} />
+        <Route path="/fasilitasumum/mess" element={<Mess />} />
         <Route path="/fasilitasumum/lainnya" element={<FasilitasLainnya />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/login" element={<Login />} />

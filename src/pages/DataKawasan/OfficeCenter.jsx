@@ -8,7 +8,7 @@ import { getDataById } from "../../global/fetch-api";
 import { MapContainer, TileLayer, Polygon, Popup, Marker } from "react-leaflet";
 import Preloader from "../../components/Preloader";
 
-function RayonSatu() {
+function OfficeCenter() {
   const navigate = useNavigate();
   const [facilityData, setFacilityData] = useState(null);
   const [coordinates, setCoordinates] = useState([]);
@@ -100,4 +100,4 @@ const MapComponent = ({ latitude, longitude }) => {
   );
 };
 
-export default RayonSatu;
+export default OfficeCenter;

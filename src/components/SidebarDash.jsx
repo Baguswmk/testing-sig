@@ -1,15 +1,66 @@
+/* eslint-disable react/jsx-key */
 import { useState } from "react";
 import "../style/components/SidebarDash.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBarsStaggered, faMosque, faSchool, faChalkboardUser, faToilet, faBuilding, faArrowRightFromBracket, faLock, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faBarsStaggered, faMagnifyingGlass, faMosque, faHouse, faBuilding, faArrowRightFromBracket, faLock, faLocationDot, faHospital, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
 const SidebarDashboard = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleSearch = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    const lowerCaseQuery = searchQuery.toLowerCase();
+    let searchResults = [];
+
+    switch (lowerCaseQuery) {
+      case "masjid":
+        searchResults = [
+          <a href="/fasilitasumum/masjid">
+            Masjid <FontAwesomeIcon icon={faMosque} />
+          </a>,
+        ];
+        break;
+      case "sekolah":
+        searchResults = [
+          <a href="/fasilitasumum/sekolah">
+            <FontAwesomeIcon icon={faGraduationCap} />
+            Sekolah Umum
+          </a>,
+        ];
+        break;
+      case "klinik":
+        searchResults = [
+          <a href="/fasilitasumum/klinik">
+            <FontAwesomeIcon icon={faHospital} />
+            Klinik
+          </a>,
+        ];
+        break;
+      case "mess":
+        searchResults = [
+          <a href="/fasilitasumum/mess">
+            <FontAwesomeIcon icon={faHouse} />
+            Mess
+          </a>,
+        ];
+        break;
+      default:
+        searchResults = ["Tidak ada hasil pencarian"];
+        break;
+    }
+
+    setSearchResults(searchResults);
+  };
   return (
     <aside className={`sidebarDash ${isMenuOpen ? "menuOpen" : ""}`}>
       <div className="menuToggle" onClick={toggleMenu}>
@@ -23,9 +74,17 @@ const SidebarDashboard = () => {
       </div>
 
       <div className="search">
-        <input type="text" placeholder="Cari Lokasi" />
+        <form onSubmit={handleSearchSubmit}>
+          <input type="text" placeholder="Cari Lokasi" value={searchQuery} onChange={handleSearch} />
+          <FontAwesomeIcon icon={faMagnifyingGlass} onClick={handleSearchSubmit} />
+        </form>
       </div>
 
+      <div className="searchResults">
+        {searchResults.map((result, index) => (
+          <p key={index}>{result}</p>
+        ))}
+      </div>
       <div className="fasilitasUmum">
         <h2>Fasilitas Umum</h2>
         <ul>
@@ -35,21 +94,21 @@ const SidebarDashboard = () => {
             </a>
           </li>
           <li>
-            <a href="/fasilitasumum/sekolahdasar">
-              <FontAwesomeIcon icon={faSchool} />
-              Sekolah Dasar
+            <a href="/fasilitasumum/sekolah">
+              <FontAwesomeIcon icon={faGraduationCap} />
+              Sekolah Umum
             </a>
           </li>
           <li>
-            <a href="/fasilitasumum/smp">
-              <FontAwesomeIcon icon={faChalkboardUser} />
-              SMP
+            <a href="/fasilitasumum/klinik">
+              <FontAwesomeIcon icon={faHospital} />
+              Klinik
             </a>
           </li>
           <li>
-            <a href="/fasilitasumum/toilet">
-              <FontAwesomeIcon icon={faToilet} />
-              Toilet
+            <a href="/fasilitasumum/mess">
+              <FontAwesomeIcon icon={faHouse} />
+              Mess
             </a>
           </li>
           <li>
