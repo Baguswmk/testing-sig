@@ -69,6 +69,22 @@ function Laboratorium() {
             </button>
           </div>
         </div>
+        <div className="card-fasum">
+          <h1>Pusat Penelitian Perkebunan Gula Indonesia</h1>
+          <div className="img-fasum">
+            <img src={MasjidPict} alt={MasjidPict} />
+          </div>
+          <div className="content-fasum">
+            <p>
+              Pusat Penelitian Perkebunan Gula Indonesia, disingkat P3GI, adalah lembaga penelitian pergulaan di Indonesia. Lembaga penelitian yang berpusat di Pasuruan, Jawa Timur, ini bertugas melaksanakan penelitian, menghasilkan
+              mengkaji teknologi dan produk pergulaan dan pemanis bagi kemajuan masyarakat gula, khususnya petani tebu dan pabrik gula, dan memberikan bantuan teknis kepada klien.
+            </p>
+            <button id="btn4" onClick={handleButtonClicked("https://goo.gl/maps/7Gm6pbb3qL8JwTv88")}>
+              <GeoAlt />
+              Kunjungi lokasi peta
+            </button>
+          </div>
+        </div>
       </div>
       <SidebarDashboard />
     </div>

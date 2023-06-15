@@ -60,6 +60,24 @@ function Mess() {
         </div>
         <div className="card-fasum">
           <div className="item-fasum">
+            <h1>Wisma Serbaguna</h1>
+            <div className="img-fasum">
+              <img src={MasjidPict} alt={MasjidPict} />
+            </div>
+            <div className="content-fasum">
+              <p>
+                Wisma serbaguna adalah sebuah bangunan atau kompleks bangunan yang dirancang untuk menyediakan berbagai fasilitas dan layanan untuk keperluan serbaguna. Wisma serbaguna dapat digunakan untuk berbagai jenis acara dan
+                kegiatan, seperti pertemuan bisnis, konferensi, seminar, perayaan, acara sosial, atau acara keagamaan.
+              </p>
+              <button id="btn4" onClick={() => handleButtonClicked("https://goo.gl/maps/bRtMvbSKztjGUbvh8")}>
+                <GeoAlt />
+                Kunjungi lokasi peta
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="card-fasum">
+          <div className="item-fasum">
             <h1>Mess Karyawan</h1>
             <div className="img-fasum">
               <img src={MasjidPict} alt={MasjidPict} />

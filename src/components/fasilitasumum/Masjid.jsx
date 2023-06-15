@@ -6,8 +6,8 @@ import "../../style/components/fasilitasumum/Masjid.css";
 
 function Masjid() {
   const navigate = useNavigate();
-  const handleButtonClicked = () => {
-    window.open("https://goo.gl/maps/14fvLrFugJ2KSxpDA");
+  const handleButtonClicked = (link) => {
+    window.open(link);
   };
   return (
     <div className="wrapper-fasum">
@@ -29,7 +29,23 @@ function Masjid() {
               Masjid Baiturrohman PTPN IV merupakan masjid utama di PTPN IV Bungamayang. Masjid ini memiliki halaman yang luas, rapih, bersih dan terurus. Para karyawan yang beragama islam beribadah di masjid ini. Masjid ini terletak di
               daerah kantor central.
             </p>
-            <button id="btn4" onClick={handleButtonClicked}>
+            <button id="btn4" onClick={handleButtonClicked("https://goo.gl/maps/14fvLrFugJ2KSxpDA")}>
+              <GeoAlt />
+              Kunjungi lokasi peta
+            </button>
+          </div>
+        </div>
+        <div className="card-fasum">
+          <h1> Mushola</h1>
+          <div className="img-fasum">
+            <img src={MasjidPict} alt={MasjidPict} />
+          </div>
+          <div className="content-fasum">
+            <p>
+              Mushola adalah sebuah tempat ibadah yang biasa ditemukan di dalam lingkungan masyarakat Muslim. Mushola sering kali berukuran kecil dan sederhana, dibandingkan dengan masjid yang lebih besar dan memiliki fasilitas yang lebih
+              lengkap. Namun, meskipun ukurannya kecil, mushola tetap memiliki peran penting dalam kehidupan komunitas Muslim.
+            </p>
+            <button id="btn4" onClick={handleButtonClicked("https://goo.gl/maps/igZFkVYSf9cfL4x29")}>
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
