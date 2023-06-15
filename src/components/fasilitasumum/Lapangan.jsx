@@ -20,6 +20,7 @@ function Lapangan() {
           <h1> Fasilitas Umum</h1>
         </div>
         <div className="card-fasum">
+        <br />
           <h1>Lapangan Tenis</h1>
           <div className="content-fasum">
             <p>
@@ -30,6 +31,7 @@ function Lapangan() {
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
+            <br />
           </div>
         </div>
       </div>

@@ -28,7 +28,6 @@ function Station() {
         </div>
         <div className="card-fasum">
           <br />
-          <br />
           <h1>Mill and Diffuser Station PG Bungamayang PT Perkebunan Nusantara VII</h1>
           <div className="img-fasum">
             <img src={StationMillDiffuser} alt={StationMillDiffuser} />
@@ -55,11 +54,9 @@ function Station() {
               Kunjungi lokasi peta
             </button>
             <br />
-            <br />
           </div>
         </div>
         <div className="card-fasum">
-          <br />
           <br />
           <h1>Mill Station (Dcs) PTPN7 Bungamayang</h1>
           <div className="img-fasum">
@@ -87,11 +84,9 @@ function Station() {
               Kunjungi lokasi peta
             </button>
             <br />
-            <br />
           </div>
         </div>
         <div className="card-fasum">
-          <br />
           <br />
           <h1>Workshop Station Besali</h1>
           <div className="img-fasum">
@@ -119,11 +114,10 @@ function Station() {
               Kunjungi lokasi peta
             </button>
             <br />
-            <br />
           </div>
         </div>
         <div className="card-fasum">
-          <br />
+
           <br />
           <h1>Stasiun Pengolahan (Mill Station) PG Bungamayang</h1>
           <div className="img-fasum">
@@ -158,11 +152,9 @@ function Station() {
               Kunjungi lokasi peta
             </button>
             <br />
-            <br />
           </div>
         </div>
         <div className="card-fasum">
-          <br />
           <br />
           <h1>Instrument Station 709 PTPN7 Bungamayang</h1>
           <div className="img-fasum">
@@ -194,11 +186,9 @@ function Station() {
               Kunjungi lokasi peta
             </button>
             <br />
-            <br />
           </div>
         </div>
         <div className="card-fasum">
-          <br />
           <br />
           <h1>Cooling Tower</h1>
           <div className="img-fasum">
@@ -229,7 +219,6 @@ function Station() {
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
-            <br />
             <br />
           </div>
         </div>

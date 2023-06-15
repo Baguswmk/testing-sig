@@ -22,6 +22,7 @@ function Klinik() {
           <h1> Fasilitas Umum</h1>
         </div>
         <div className="card-fasum">
+          <br />
           <h1>Klinik PG Bungamayang</h1>
           <div className="img-fasum">
             <img src={KlinikPict} alt={KlinikPict} />
@@ -39,6 +40,7 @@ function Klinik() {
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
+            <br />
           </div>
         </div>
       </div>

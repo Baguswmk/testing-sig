@@ -21,6 +21,7 @@ function Masjid() {
           <h1> Fasilitas Umum</h1>
         </div>
         <div className="card-fasum">
+        <br />
           <h1> Masjid Baiturrohman PTPN IV</h1>
           <div className="img-fasum">
             <img src={MasjidBaiturrohman} alt={MasjidBaiturrohman} />
@@ -34,9 +35,11 @@ function Masjid() {
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
+            <br />
           </div>
         </div>
         <div className="card-fasum">
+        <br />
           <h1> Mushola</h1>
           <div className="content-fasum">
             <p>
@@ -47,6 +50,7 @@ function Masjid() {
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
+            <br />
           </div>
         </div>
       </div>

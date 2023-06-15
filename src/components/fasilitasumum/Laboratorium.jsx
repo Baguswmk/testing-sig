@@ -22,6 +22,7 @@ function Laboratorium() {
           <h1> Fasilitas Umum</h1>
         </div>
         <div className="card-fasum">
+        <br />
           <h1>Laboratorium Pabrik PG Bunga Mayang</h1>
           <div className="img-fasum">
             <img src={LabPabrik} alt={LabPabrik} />
@@ -44,9 +45,11 @@ function Laboratorium() {
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
+            <br />
           </div>
         </div>
         <div className="card-fasum">
+        <br />
           <h1>Laboratorium Core Sampler PG Bungamayang</h1>
           <div className="img-fasum">
             <img src={LabCore} alt={LabCore} />
@@ -68,9 +71,11 @@ function Laboratorium() {
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
+            <br />
           </div>
         </div>
         <div className="card-fasum">
+        <br />
           <h1>Pusat Penelitian Perkebunan Gula Indonesia</h1>
           <div className="content-fasum">
             <p>
@@ -81,6 +86,7 @@ function Laboratorium() {
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
+            <br />
           </div>
         </div>
       </div>

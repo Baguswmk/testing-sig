@@ -23,6 +23,7 @@ function Mess() {
         </div>
         <div className="card-fasum">
           <div className="item-fasum">
+          <br />
             <h1>Mess General Manager</h1>
             <div className="img-fasum">
               <img src={MessGm} alt={MessGm} />
@@ -38,11 +39,13 @@ function Mess() {
                 <GeoAlt />
                 Kunjungi lokasi peta
               </button>
+              <br />
             </div>
           </div>
         </div>
         <div className="card-fasum">
           <div className="item-fasum">
+          <br />
             <h1>Mess Tamu 1 & Tamu 2</h1>
             <div className="img-fasum">
               <img src={MessTamu} alt={MessTamu} />
@@ -57,11 +60,13 @@ function Mess() {
                 <GeoAlt />
                 Kunjungi lokasi peta
               </button>
+              <br />
             </div>
           </div>
         </div>
         <div className="card-fasum">
           <div className="item-fasum">
+          <br />
             <h1>Wisma Serbaguna</h1>
             <div className="content-fasum">
               <p>
@@ -72,11 +77,13 @@ function Mess() {
                 <GeoAlt />
                 Kunjungi lokasi peta
               </button>
+              <br />
             </div>
           </div>
         </div>
         <div className="card-fasum">
           <div className="item-fasum">
+          <br />
             <h1>Mess Karyawan</h1>
             <div className="content-fasum">
               <p>
@@ -89,6 +96,7 @@ function Mess() {
                 <GeoAlt />
                 Kunjungi lokasi peta
               </button>
+              <br />
             </div>
           </div>
         </div>

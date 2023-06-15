@@ -51,7 +51,6 @@ function Gudang() {
         </div>
         <div className="card-fasum">
           <br />
-          <br />
           <h1>Gudang Gula</h1>
           <div className="slider-detail">
             <SliderComponent />
@@ -88,10 +87,10 @@ function Gudang() {
               Kunjungi lokasi peta
             </button>
             <br />
-            <br />
           </div>
         </div>
         <div className="card-fasum">
+        <br />
           <h1>Bagasse Storage Pabrik Gula Bungamayang atau ampas pembuangan</h1>
           <div className="img-fasum">
             <img src={Bagasse} alt={Bagasse} />
@@ -114,10 +113,10 @@ function Gudang() {
               Kunjungi lokasi peta
             </button>
             <br />
-            <br />
           </div>
         </div>
         <div className="card-fasum">
+        <br />
           <h1>Lahan pengumpulan tebu (Caneyard)</h1>
           <div className="img-fasum">
             <img src={LahanPengumpulan} alt={LahanPengumpulan} />
@@ -136,7 +135,6 @@ function Gudang() {
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
-            <br />
             <br />
           </div>
         </div>

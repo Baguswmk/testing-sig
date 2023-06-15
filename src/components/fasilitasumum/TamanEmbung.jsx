@@ -21,6 +21,8 @@ function TamanEmbung() {
           <h1> Fasilitas Umum</h1>
         </div>
         <div className="card-fasum">
+          <br />
+
           <h1>Taman Embung</h1>
           <div className="img-fasum">
             <img src={MasjidPict} alt={MasjidPict} />
@@ -35,6 +37,7 @@ function TamanEmbung() {
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
+            <br />
           </div>
         </div>
       </div>

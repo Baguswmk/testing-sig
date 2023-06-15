@@ -25,6 +25,7 @@ function Sekolah() {
         </div>
         <div className="card-fasum">
           <div className="item-fasum">
+          <br />
             <h1>PAUD PG Bungamayang </h1>
             <div className="img-fasum">
               <img src={Paud} alt={Paud} />
@@ -38,11 +39,13 @@ function Sekolah() {
                 <GeoAlt />
                 Kunjungi lokasi peta
               </button>
+              <br />
             </div>
           </div>
         </div>
         <div className="card-fasum">
           <div className="item-fasum">
+          <br />
             <h1>TK PG Bungamayang </h1>
             <div className="img-fasum">
               <img src={TKPict} alt={TKPict} />
@@ -59,11 +62,13 @@ function Sekolah() {
                 <GeoAlt />
                 Kunjungi lokasi peta
               </button>
+              <br />
             </div>
           </div>
         </div>
         <div className="card-fasum">
           <div className="item-fasum">
+          <br />
             <h1>SD PG Bungamayang</h1>
             <div className="img-fasum">
               <img src={SDPict} alt={SDPict} />
@@ -85,11 +90,13 @@ function Sekolah() {
                 <GeoAlt />
                 Kunjungi lokasi peta
               </button>
+              <br />
             </div>
           </div>
         </div>
         <div className="card-fasum">
           <div className="item-fasum">
+          <br />
             <h1>SMP PG Bungamayang</h1>
             <div className="img-fasum">
               <img src={SMPPict} alt={SMPPict} />
@@ -103,6 +110,7 @@ function Sekolah() {
                 <GeoAlt />
                 Kunjungi lokasi peta
               </button>
+              <br />
             </div>
           </div>
         </div>
