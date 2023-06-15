@@ -42,11 +42,11 @@
   margin: 0 auto 30px auto;
 }
 
-.leaflet-container {
+.card-datkaw .leaflet-container {
   border: #000 1px solid;
   border-radius: 8px;
-  width: 70%;
-  height: 500px;
+  width: 80%;
+  height: 600px;
 }
 .img-datkaw {
   display: flex;
