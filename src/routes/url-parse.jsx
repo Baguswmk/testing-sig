@@ -7,7 +7,6 @@ import TentangKami from "../pages/TentangKami.jsx";
 import HubungiKami from "../pages/HubungiKami.jsx";
 import Login from "../pages/LoginPage.jsx";
 import ErrorPage from "../pages/ErrorPage.jsx";
-import Map from "../components/Map.jsx";
 import DetailInfoUmum from "../pages/DetailInfoUmum.jsx";
 import Faq from "../pages/Faq.jsx";
 import Masjid from "../components/Fasilitasumum/Masjid.jsx";
@@ -56,7 +55,6 @@ function urlParse() {
         <Route path="/sejarah" element={<Sejarah />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/map" element={<Map />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
