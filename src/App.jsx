@@ -1,4 +1,4 @@
-import urlParse from "./routes/ulr-parse";
+import urlParse from "./routes/url-parse";
 import { getAllData } from "./global/fetch-api";
 import { useEffect } from "react";
 

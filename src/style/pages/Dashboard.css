@@ -13,7 +13,12 @@
 .contentDash::-webkit-scrollbar {
   width: 6px;
 }
-
+.strikethrough {
+  text-decoration: line-through;
+}
+.strikethrough {
+  text-decoration: line-through;
+}
 .contentDash::-webkit-scrollbar-thumb {
   background-color: transparent;
 }

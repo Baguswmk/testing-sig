@@ -31,6 +31,9 @@ section {
 .strikethrough {
   text-decoration: line-through;
 }
+.strikethrough {
+  text-decoration: line-through;
+}
 /* Navigation */
 nav {
   width: 100%;

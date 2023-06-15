@@ -21,7 +21,8 @@ function Bengkel() {
           <h1> Fasilitas Umum</h1>
         </div>
         <div className="card-fasum">
-          <h1>Lapangan Tenis</h1>
+          <br />
+          <h1>Bengkel dan Pool TMA PG Bungamayang PTPN 7</h1>
           <div className="img-fasum">
             <img src={MasjidPict} alt={MasjidPict} />
           </div>
@@ -35,6 +36,7 @@ function Bengkel() {
               Kunjungi lokasi peta
             </button>
           </div>
+          <br />
         </div>
       </div>
       <SidebarDashboard />

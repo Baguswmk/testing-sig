@@ -80,46 +80,99 @@ const MapComponent = () => {
         <Popup>POS Gerbang Kantor Central</Popup>
       </Marker>
       <Marker position={[-4.591195, 104.873974]}>
-        <Popup>Masjid Baiturrohman PTPN IV</Popup>
+        <Popup>
+          <a href="/fasilitasumum/masjid" style={{ color: "black" }}>
+            Masjid Baiturrohman PTPN IV
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.5916682586542965, 104.87387155386557]}>
         <Popup>Gedung Tjoek Soepono PG Bungamayang</Popup>
       </Marker>
       <Marker position={[-4.593442114642538, 104.87379997054991]}>
-        <Popup>Paud</Popup>
+        <Popup>
+          <a href="/fasilitasumum/sekolah" style={{ color: "black" }}>
+            Paud
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.5930038385881, 104.8740901453161]}>
-        <Popup>TK</Popup>
+        <Popup>
+          <a href="/fasilitasumum/sekolah" style={{ color: "black" }}>
+            TK
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.591990620531944, 104.87455366641129]}>
-        <Popup>SD</Popup>
+        <Popup>
+          <a href="/fasilitasumum/sekolah" style={{ color: "black" }}>
+            SD
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.592420963314999, 104.87456464256461]}>
-        <Popup>SMP</Popup>
+        <Popup>
+          <a href="/fasilitasumum/sekolah" style={{ color: "black" }}>
+            SMP
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.594503381093948, 104.87194865921903]}>
-        <Popup>Klinik</Popup>
+        <Popup>
+          <a href="/fasilitasumum/klinik" style={{ color: "black" }}>
+            Klinik
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.590846618277433, 104.87257979493575]}>
-        <Popup>Lapangan Tenis</Popup>
+        <Popup>
+          <a href="/fasilitasumum/lapangan" style={{ color: "black" }}>
+            Lapangan Tenis
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.5901043012888545, 104.8727549671523]}>
-        <Popup>Mess General Manager</Popup>
+        <Popup>
+          <a href="/fasilitasumum/mess" style={{ color: "black" }}>
+            Mess General Manager
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.590365216791212, 104.87232368469289]}>
-        <Popup>Mess Tamu 1</Popup>
+        <Popup>
+          <a href="/fasilitasumum/mess" style={{ color: "black" }}>
+            Mess Tamu 1
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.590872147129439, 104.8710431334721]}>
-        <Popup>Mess Tamu 2</Popup>
+        <Popup>
+          <a href="/fasilitasumum/mess" style={{ color: "black" }}>
+            Mess Tamu 2
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.590303218092043, 104.87197610650439]}>
-        <Popup>Taman Embung</Popup>
+        <Popup>
+          <a href="/fasilitasumum/tamanembung" style={{ color: "black" }}>
+            Taman Embung
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.593507760044691, 104.87186816738904]}>
-        <Popup>30 Mess Karyawan</Popup>
+        <Popup>
+          <a href="/fasilitasumum/mess" style={{ color: "black" }}>
+            30 Mess Karyawan
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.589354477930334, 104.87307537319575]}>
-        <Popup>Laboratorium Core Sampler PG Bungamayang</Popup>
+        <Popup>
+          {" "}
+          <a href="/fasilitasumum/laboratorium" style={{ color: "black" }}>
+            Laboratorium Core Sampler PG Bungamayang
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.58854500332904, 104.87302034947172]}>
         <Popup>POM BBM Bunga Mayang</Popup>
@@ -139,14 +192,19 @@ const MapComponent = () => {
       <Marker position={[-4.588631, 104.873917]}>
         <Popup>Pintu Masuk Area & Absensi Karyawan</Popup>
       </Marker>
-      <Marker position={[-4.588675366162257, 104.8743536500561]}>
-        <Popup>Station PG</Popup>
-      </Marker>
       <Marker position={[-4.588089019197086, 104.87660143571232]}>
-        <Popup>Gedung Gula</Popup>
+        <Popup>
+          <a href="/fasilitasumum/gudang" style={{ color: "black" }}>
+            Gudang Gula
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.5881031821724525, 104.8756494658602]}>
-        <Popup>Laboratorium Pabrik PG Bunga Mayang</Popup>
+        <Popup>
+          <a href="/fasilitasumum/laboratorium" style={{ color: "black" }}>
+            Laboratorium Pabrik PG Bunga Mayang
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.587290226928853, 104.87606719587576]}>
         <Popup>Bengkel dan Pool TMA</Popup>
@@ -159,6 +217,48 @@ const MapComponent = () => {
       </Marker>
       <Marker position={[-4.587868, 104.874369]}>
         <Popup>Lahan Pengumpulan Tebu</Popup>
+      </Marker>
+      <Marker position={[-4.588675366162257, 104.8743536500561]}>
+        <Popup>
+          <a href="/fasilitasumum/station" style={{ color: "black" }}>
+            Mill and Diffuser Station PG Bungamayang PT Perkebunan Nusantara VII
+          </a>
+        </Popup>
+      </Marker>
+      <Marker position={[-4.589032272762762, 104.87492483196736]}>
+        <Popup>
+          <a href="/fasilitasumum/station" style={{ color: "black" }}>
+            Mill Station (Dcs) PTPN7 Bungamayang
+          </a>
+        </Popup>
+      </Marker>
+      <Marker position={[-4.588448758704236, 104.8747543299043]}>
+        <Popup>
+          <a href="/fasilitasumum/station" style={{ color: "black" }}>
+            Workshop Station Besal
+          </a>
+        </Popup>
+      </Marker>
+      <Marker position={[-4.588394939422389, 104.87559263171437]}>
+        <Popup>
+          <a href="/fasilitasumum/station" style={{ color: "black" }}>
+            Stasiun Pengolahan (Mill Station) PG Bungamayang
+          </a>
+        </Popup>
+      </Marker>
+      <Marker position={[-4.588907638732068, 104.8756380989312]}>
+        <Popup>
+          <a href="/fasilitasumum/station" style={{ color: "black" }}>
+            Instrument Station 709 PTPN7 Bungamayang
+          </a>
+        </Popup>
+      </Marker>
+      <Marker position={[-4.589236219311511, 104.8759506860468]}>
+        <Popup>
+          <a href="/fasilitasumum/station" style={{ color: "black" }}>
+            Cooling Tower
+          </a>
+        </Popup>
       </Marker>
       {/* <Marker position={[-4.593368, 104.875195]}>
         <Popup>POS Gerbang Kantor Central</Popup>

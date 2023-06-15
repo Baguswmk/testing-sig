@@ -21,6 +21,8 @@ function Gudang() {
           <h1> Fasilitas Umum</h1>
         </div>
         <div className="card-fasum">
+          <br />
+          <br />
           <h1>Gudang Gula</h1>
           <div className="img-fasum">
             <img src={MasjidPict} alt={MasjidPict} />
@@ -44,6 +46,7 @@ function Gudang() {
             </button>
           </div>
         </div>
+        <br />
         {/* <div className="card-fasum">
           <h1>Gudang Pupuk</h1>
           <div className="img-fasum">

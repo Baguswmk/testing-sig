@@ -73,13 +73,13 @@ function Dashboard() {
               <div className="menuContent" onClick={handleClickOutside}>
                 <a href="/datakawasan/rayon-1">Rayon 1</a>
                 <br />
-                <a href="#">Rayon 2</a>
+                <a className="strikethrough">Rayon 2</a>
                 <br />
 
-                <a href="#">Rayon 3</a>
+                <a className="strikethrough">Rayon 3</a>
                 <br />
 
-                <a href="#">Rayon 4</a>
+                <a className="strikethrough">Rayon 4</a>
                 <br />
 
                 <a href="/datakawasan/Office-center">Office Center</a>

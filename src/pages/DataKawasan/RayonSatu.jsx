@@ -104,7 +104,11 @@ const MapComponent = ({ latitude, longitude }) => {
         <Popup>Gudang Pupuk</Popup>
       </Marker>
       <Marker position={[-4.6811112342137235, 104.83215248127057]}>
-        <Popup>Bengkel</Popup>
+        <Popup>
+          <a href="/fasilitasumum/bengkel" style={{ color: "black" }}>
+            Bengkel
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.682133795014973, 104.83109260106863]}>
         <Popup>Mushola</Popup>
