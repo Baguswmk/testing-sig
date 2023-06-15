@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, GeoAlt } from "react-bootstrap-icons";
 import SidebarDashboard from "../SidebarDash";
-import MasjidPict from "../../public/img/kantor.webp";
+import MasjidBaiturrohman from "../../public/img/components/masjid-baiturrohman.webp";
+
 import "../../style/components/fasilitasumum/Masjid.css";
 
 function Masjid() {
@@ -22,7 +23,7 @@ function Masjid() {
         <div className="card-fasum">
           <h1> Masjid Baiturrohman PTPN IV</h1>
           <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+            <img src={MasjidBaiturrohman} alt={MasjidBaiturrohman} />
           </div>
           <div className="content-fasum">
             <p>
@@ -37,9 +38,6 @@ function Masjid() {
         </div>
         <div className="card-fasum">
           <h1> Mushola</h1>
-          <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
-          </div>
           <div className="content-fasum">
             <p>
               Mushola adalah sebuah tempat ibadah yang biasa ditemukan di dalam lingkungan masyarakat Muslim. Mushola sering kali berukuran kecil dan sederhana, dibandingkan dengan masjid yang lebih besar dan memiliki fasilitas yang lebih

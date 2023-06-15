@@ -2,7 +2,7 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, GeoAlt } from "react-bootstrap-icons";
 import SidebarDashboard from "../SidebarDash";
-import MasjidPict from "../../public/img/kantor.webp";
+import BengkelPool from "../../public/img/components/bengkel-pool.webp";
 import "../../style/components/fasilitasumum/Masjid.css";
 
 function Bengkel() {
@@ -24,7 +24,7 @@ function Bengkel() {
           <br />
           <h1>Bengkel dan Pool TMA PG Bungamayang PTPN 7</h1>
           <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+            <img src={BengkelPool} alt={BengkelPool} />
           </div>
           <div className="content-fasum">
             <p>

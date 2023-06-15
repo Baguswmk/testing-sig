@@ -1,7 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, GeoAlt } from "react-bootstrap-icons";
 import SidebarDashboard from "../SidebarDash";
-import MasjidPict from "../../public/img/kantor.webp";
+import Paud from "../../public/img/components/paud.webp";
+import TKPict from "../../public/img/components/tk.webp";
+import SDPict from "../../public/img/components/sd.webp";
+import SMPPict from "../../public/img/components/smp.webp";
+
 import "../../style/components/fasilitasumum/Masjid.css";
 
 function Sekolah() {
@@ -23,7 +27,7 @@ function Sekolah() {
           <div className="item-fasum">
             <h1>PAUD PG Bungamayang </h1>
             <div className="img-fasum">
-              <img src={MasjidPict} alt={MasjidPict} />
+              <img src={Paud} alt={Paud} />
             </div>
             <div className="content-fasum">
               <p>
@@ -41,7 +45,7 @@ function Sekolah() {
           <div className="item-fasum">
             <h1>TK PG Bungamayang </h1>
             <div className="img-fasum">
-              <img src={MasjidPict} alt={MasjidPict} />
+              <img src={TKPict} alt={TKPict} />
             </div>
             <div className="content-fasum">
               <p>
@@ -62,7 +66,7 @@ function Sekolah() {
           <div className="item-fasum">
             <h1>SD PG Bungamayang</h1>
             <div className="img-fasum">
-              <img src={MasjidPict} alt={MasjidPict} />
+              <img src={SDPict} alt={SDPict} />
             </div>
             <div className="content-fasum">
               <p>
@@ -88,7 +92,7 @@ function Sekolah() {
           <div className="item-fasum">
             <h1>SMP PG Bungamayang</h1>
             <div className="img-fasum">
-              <img src={MasjidPict} alt={MasjidPict} />
+              <img src={SMPPict} alt={SMPPict} />
             </div>
             <div className="content-fasum">
               <p>

@@ -2,7 +2,10 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, GeoAlt } from "react-bootstrap-icons";
 import SidebarDashboard from "../SidebarDash";
-import MasjidPict from "../../public/img/kantor.webp";
+import KantorCentral from "../../public/img/components/kantor-central.webp";
+import KantorTma from "../../public/img/components/kantor-tma.webp";
+import GedungTioek from "../../public/img/components/gedung-tioek.webp";
+
 import "../../style/components/fasilitasumum/Masjid.css";
 
 function Gedung() {
@@ -24,7 +27,7 @@ function Gedung() {
           <br />
           <h1>Kantor Central PG</h1>
           <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+            <img src={KantorCentral} alt={KantorCentral} />
           </div>
           <div className="content-fasum">
             <p>
@@ -45,7 +48,7 @@ function Gedung() {
           <br />
           <h1>Gedung Tjoek Soepono PG Bungamayang</h1>
           <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+            <img src={GedungTioek} alt={GedungTioek} />
           </div>
           <div className="content-fasum">
             <p>
@@ -63,7 +66,7 @@ function Gedung() {
           <br />
           <h1>Kantor TMA PG Bungamayang </h1>
           <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+            <img src={KantorTma} alt={KantorTma} />
           </div>
           <div className="content-fasum">
             <p>

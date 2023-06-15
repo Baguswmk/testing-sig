@@ -2,7 +2,8 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, GeoAlt } from "react-bootstrap-icons";
 import SidebarDashboard from "../SidebarDash";
-import MasjidPict from "../../public/img/kantor.webp";
+import LabPabrik from "../../public/img/components/lab-pabrik.webp";
+import LabCore from "../../public/img/components/lab-core-sampler.webp";
 import "../../style/components/fasilitasumum/Masjid.css";
 
 function Laboratorium() {
@@ -23,7 +24,7 @@ function Laboratorium() {
         <div className="card-fasum">
           <h1>Laboratorium Pabrik PG Bunga Mayang</h1>
           <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+            <img src={LabPabrik} alt={LabPabrik} />
           </div>
           <div className="content-fasum">
             <p>
@@ -48,7 +49,7 @@ function Laboratorium() {
         <div className="card-fasum">
           <h1>Laboratorium Core Sampler PG Bungamayang</h1>
           <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+            <img src={LabCore} alt={LabCore} />
           </div>
           <div className="content-fasum">
             <p>
@@ -71,9 +72,6 @@ function Laboratorium() {
         </div>
         <div className="card-fasum">
           <h1>Pusat Penelitian Perkebunan Gula Indonesia</h1>
-          <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
-          </div>
           <div className="content-fasum">
             <p>
               Pusat Penelitian Perkebunan Gula Indonesia, disingkat P3GI, adalah lembaga penelitian pergulaan di Indonesia. Lembaga penelitian yang berpusat di Pasuruan, Jawa Timur, ini bertugas melaksanakan penelitian, menghasilkan

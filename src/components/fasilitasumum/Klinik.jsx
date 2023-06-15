@@ -2,7 +2,8 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, GeoAlt } from "react-bootstrap-icons";
 import SidebarDashboard from "../SidebarDash";
-import MasjidPict from "../../public/img/kantor.webp";
+import KlinikPict from "../../public/img/components/klinik.webp";
+
 import "../../style/components/fasilitasumum/Masjid.css";
 
 function Klinik() {
@@ -23,7 +24,7 @@ function Klinik() {
         <div className="card-fasum">
           <h1>Klinik PG Bungamayang</h1>
           <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+            <img src={KlinikPict} alt={KlinikPict} />
           </div>
           <div className="content-fasum">
             <p>

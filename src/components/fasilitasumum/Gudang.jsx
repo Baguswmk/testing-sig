@@ -2,13 +2,42 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, GeoAlt } from "react-bootstrap-icons";
 import SidebarDashboard from "../SidebarDash";
-import MasjidPict from "../../public/img/kantor.webp";
+import GudangGula from "../../public/img/components/gudang-gula.webp";
+import GudangGula2 from "../../public/img/components/gudang-gula2.webp";
+import GudangGula3 from "../../public/img/components/gudang-gula3.webp";
+import Bagasse from "../../public/img/components/bagasse-storage.webp";
+import LahanPengumpulan from "../../public/img/components/lahan-pengumpulan2.webp";
 import "../../style/components/fasilitasumum/Masjid.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Gudang() {
   const navigate = useNavigate();
   const handleButtonClicked = (link) => {
     window.open(link);
+  };
+
+  const SliderComponent = () => {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    };
+
+    const images = [GudangGula, GudangGula2, GudangGula3];
+
+    return (
+      <Slider {...settings}>
+        {images.map((image, index) => (
+          <div key={index}>
+            <img src={image} alt={`Slide ${index}`} className="img-detail" />
+          </div>
+        ))}
+      </Slider>
+    );
   };
   return (
     <div className="wrapper-fasum">
@@ -24,8 +53,8 @@ function Gudang() {
           <br />
           <br />
           <h1>Gudang Gula</h1>
-          <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+          <div className="slider-detail">
+            <SliderComponent />
           </div>
           <div className="content-fasum">
             <p>
@@ -49,9 +78,6 @@ function Gudang() {
         <br />
         <div className="card-fasum">
           <h1>Gudang Pupuk</h1>
-          <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
-          </div>
           <div className="content-fasum">
             <p>
               Gudang pupuk adalah fasilitas penyimpanan yang dirancang khusus untuk menyimpan pupuk dalam jumlah besar. Gudang pupuk penting dalam rantai pasok pupuk, karena mereka bertindak sebagai tempat penyimpanan sementara sebelum
@@ -61,12 +87,14 @@ function Gudang() {
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
+            <br />
+            <br />
           </div>
         </div>
         <div className="card-fasum">
           <h1>Bagasse Storage Pabrik Gula Bungamayang atau ampas pembuangan</h1>
           <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+            <img src={Bagasse} alt={Bagasse} />
           </div>
           <div className="content-fasum">
             <p>
@@ -85,12 +113,14 @@ function Gudang() {
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
+            <br />
+            <br />
           </div>
         </div>
         <div className="card-fasum">
           <h1>Lahan pengumpulan tebu (Caneyard)</h1>
           <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+            <img src={LahanPengumpulan} alt={LahanPengumpulan} />
           </div>
           <div className="content-fasum">
             <p>
@@ -106,6 +136,8 @@ function Gudang() {
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
+            <br />
+            <br />
           </div>
         </div>
       </div>

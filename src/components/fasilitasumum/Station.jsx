@@ -2,7 +2,13 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, GeoAlt } from "react-bootstrap-icons";
 import SidebarDashboard from "../SidebarDash";
-import MasjidPict from "../../public/img/kantor.webp";
+import StationInstrument from "../../public/img/components/station-instrument.webp";
+import StasiunPengolahan from "../../public/img/components/stasiun-pengolahan.webp";
+import StationMill from "../../public/img/components/station-mill.webp";
+import StationMillDiffuser from "../../public/img/components/station-mill-diffuser.webp";
+import StationWorkshop from "../../public/img/components/station-workshop.webp";
+import CoolingTower from "../../public/img/components/cooling-tower.webp";
+
 import "../../style/components/fasilitasumum/Masjid.css";
 
 function Station() {
@@ -25,7 +31,7 @@ function Station() {
           <br />
           <h1>Mill and Diffuser Station PG Bungamayang PT Perkebunan Nusantara VII</h1>
           <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+            <img src={StationMillDiffuser} alt={StationMillDiffuser} />
           </div>
           <div className="content-fasum">
             <p>
@@ -57,7 +63,7 @@ function Station() {
           <br />
           <h1>Mill Station (Dcs) PTPN7 Bungamayang</h1>
           <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+            <img src={StationMill} alt={StationMill} />
           </div>
           <div className="content-fasum">
             <p>
@@ -89,7 +95,7 @@ function Station() {
           <br />
           <h1>Workshop Station Besali</h1>
           <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+            <img src={StationWorkshop} alt={StationWorkshop} />
           </div>
           <div className="content-fasum">
             <p>
@@ -121,7 +127,7 @@ function Station() {
           <br />
           <h1>Stasiun Pengolahan (Mill Station) PG Bungamayang</h1>
           <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+            <img src={StasiunPengolahan} alt={StasiunPengolahan} />
           </div>
           <div className="content-fasum">
             <p>
@@ -160,7 +166,7 @@ function Station() {
           <br />
           <h1>Instrument Station 709 PTPN7 Bungamayang</h1>
           <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+            <img src={StationInstrument} alt={StationInstrument} />
           </div>
           <div className="content-fasum">
             <p>
@@ -196,7 +202,7 @@ function Station() {
           <br />
           <h1>Cooling Tower</h1>
           <div className="img-fasum">
-            <img src={MasjidPict} alt={MasjidPict} />
+            <img src={CoolingTower} alt={CoolingTower} />
           </div>
           <div className="content-fasum">
             <p>

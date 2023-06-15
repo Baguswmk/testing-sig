@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, GeoAlt } from "react-bootstrap-icons";
 import SidebarDashboard from "../SidebarDash";
-import MasjidPict from "../../public/img/kantor.webp";
+import MessGm from "../../public/img/components/mess-gm.webp";
+import MessTamu from "../../public/img/components/mess-tamu.webp";
+
 import "../../style/components/fasilitasumum/Masjid.css";
 
 function Mess() {
@@ -23,7 +25,7 @@ function Mess() {
           <div className="item-fasum">
             <h1>Mess General Manager</h1>
             <div className="img-fasum">
-              <img src={MasjidPict} alt={MasjidPict} />
+              <img src={MessGm} alt={MessGm} />
             </div>
             <div className="content-fasum">
               <p>
@@ -43,7 +45,7 @@ function Mess() {
           <div className="item-fasum">
             <h1>Mess Tamu 1 & Tamu 2</h1>
             <div className="img-fasum">
-              <img src={MasjidPict} alt={MasjidPict} />
+              <img src={MessTamu} alt={MessTamu} />
             </div>
             <div className="content-fasum">
               <p>
@@ -61,9 +63,6 @@ function Mess() {
         <div className="card-fasum">
           <div className="item-fasum">
             <h1>Wisma Serbaguna</h1>
-            <div className="img-fasum">
-              <img src={MasjidPict} alt={MasjidPict} />
-            </div>
             <div className="content-fasum">
               <p>
                 Wisma serbaguna adalah sebuah bangunan atau kompleks bangunan yang dirancang untuk menyediakan berbagai fasilitas dan layanan untuk keperluan serbaguna. Wisma serbaguna dapat digunakan untuk berbagai jenis acara dan
@@ -79,9 +78,6 @@ function Mess() {
         <div className="card-fasum">
           <div className="item-fasum">
             <h1>Mess Karyawan</h1>
-            <div className="img-fasum">
-              <img src={MasjidPict} alt={MasjidPict} />
-            </div>
             <div className="content-fasum">
               <p>
                 30 MESS Karyawan di PTPN 7 Bunga Mayang adalah fasilitas akomodasi yang disediakan khusus untuk para karyawan di dalam kompleks perkebunan tersebut. Fasilitas ini bertujuan untuk memberikan tempat tinggal yang nyaman dan

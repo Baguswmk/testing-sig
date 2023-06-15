@@ -4,15 +4,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, ChevronDown, ChevronRight } from "react-bootstrap-icons";
 import SidebarDashboard from "../SidebarDash";
-// import ErrorPage from "./ErrorPage";
 import "../../style/pages/Faq.css";
 
 function FasilitasLainnya() {
-  //   const { id } = useParams();
-  //   const faq = dummyData.find((item) => item.id === Number(id));
-  //   if (!faq) {
-  //     return <ErrorPage />;
-  //   }
   const navigate = useNavigate();
   const [openIndexes, setOpenIndexes] = useState([]);
 
