@@ -1,5 +1,4 @@
 import "../style/pages/Dashboard.css";
-import profilePict from "../public/img/profilePict.png";
 import rumah from "../public/img/rumah.webp";
 import kantor from "../public/img/kantor.webp";
 import pabrik from "../public/img/pabrik.webp";
@@ -48,21 +47,6 @@ function ContentInfoUmum() {
       <div className="cardInfo">
         <div className="cardImage">
           <img src={rumah} alt="Rumah" />
-        </div>
-        <div className="cardContent">
-          <p>
-            Kami berkomitmen untuk menyediakan pengalaman pengguna yang optimal dan memberikan informasi yang akurat dan terkini. Aplikasi ini juga dilengkapi dengan fitur-fitur canggih yang memungkinkan Anda untuk melakukan pencarian,
-            pemetaan, dan analisis data geografis sesuai kebutuhan.
-          </p>
-
-          <a href="#" className="btnSelengkapnya">
-            Selengkapnya <ArrowRight />
-          </a>
-        </div>
-      </div>
-      <div className="cardInfo">
-        <div className="cardImage">
-          <img src={profilePict} alt="Gambar" />
         </div>
         <div className="cardContent">
           <p>

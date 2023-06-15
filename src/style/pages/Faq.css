@@ -50,6 +50,9 @@
   display: flex;
   flex-direction: column;
 }
+.faq-deskripsi a:hover {
+  text-decoration: underline;
+}
 
 .faq-deskripsi p {
   font-style: normal;
