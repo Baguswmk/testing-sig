@@ -1,7 +1,6 @@
 import "../style/pages/Dashboard.css";
 import companyLogo from "../public/img/logo.webp";
-import profilePict from "../public/img/profilePict.png";
-import { ChevronRight, PencilSquare, BoxArrowRight, ChevronDown } from "react-bootstrap-icons";
+import { ChevronRight, BoxArrowRight, ChevronDown } from "react-bootstrap-icons";
 import { useState, useEffect } from "react";
 import SliderComponent from "../components/Slider";
 import SidebarDashboard from "../components/SidebarDash.jsx";
@@ -28,12 +27,10 @@ function Dashboard() {
   };
 
   useEffect(() => {
-    // Simulasikan penundaan dengan timeout
     const timeout = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
 
-    // Membersihkan timeout saat komponen diunmount
     return () => {
       clearTimeout(timeout);
     };

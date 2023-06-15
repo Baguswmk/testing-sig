@@ -7,8 +7,7 @@ import "../../style/pages/DataKawasan.css";
 import { getDataById } from "../../global/fetch-api";
 import { MapContainer, TileLayer, Polygon, Popup, Marker } from "react-leaflet";
 import Preloader from "../../components/Preloader";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+
 
 function RayonSatu() {
   const navigate = useNavigate();
@@ -53,18 +52,7 @@ function RayonSatu() {
         <div className="card-datkaw">
           <h1>{facilityData.properties.name}</h1>
           <MapComponent latitude={latitude} longitude={longitude} />
-          {/* <div className="img-datkaw">
-            <img src={facilityData.properties.image[0][1]} alt={facilityData.properties.image[0][0]} />
-            <img src={facilityData.properties.image[1][1]} alt={facilityData.properties.image[1][0]} />
-          </div> */}
           <div className="content-datkaw" style={{ width: "70%" }}>
-            <p>
-              {facilityData.properties.description}
-              {/* <br />
-              Kantor Central PTPN VII Distrik Bungamayang merupakan kantor pusat atau markas besar dari PTPN VII yang terletak di Distrik Bungamayang. PTPN VII adalah sebuah perusahaan negara yang bergerak di bidang perkebunan. Kantor
-              Central PTPN VII Distrik Bungamayang berfungsi sebagai pusat pengelolaan dan pengendalian operasional perkebunan di wilayah tersebut. Di kantor pusat ini, dilakukan berbagai kegiatan manajerial, administrasi, perencanaan, dan
-              pengawasan terkait operasional perkebunan. Selain itu, kantor ini juga menjadi tempat berkumpulnya berbagai departemen dan divisi yang terkait dengan kegiatan perkebunan di wilayah Distrik Bungamayang. */}
-            </p>
             <button id="btn4" onClick={handleButtonClicked}>
               <GeoAlt />
               Kunjungi lokasi peta

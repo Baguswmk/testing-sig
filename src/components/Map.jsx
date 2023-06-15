@@ -1,9 +1,8 @@
-import { MapContainer, TileLayer, Marker, Popup, Polygon } from "react-leaflet";
+import { MapContainer, TileLayer, Polygon } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "../style/components/Map.css";
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
-import dummyData from "../data/dummy";
 import coordinateDummy from "../data/dataCoordinate";
 import mapDummy from "../data/dataMap";
 
@@ -49,7 +48,6 @@ const MapComponent = () => {
     <MapContainer center={coordinates[0]} zoom={13} scrollWheelZoom={false}>
       <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <Polygon positions={coordinates} color="red" />
-      
     </MapContainer>
   );
 };

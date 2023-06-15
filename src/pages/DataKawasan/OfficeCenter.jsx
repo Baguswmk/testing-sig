@@ -5,10 +5,9 @@ import { ArrowLeft, GeoAlt } from "react-bootstrap-icons";
 import SidebarDashboard from "../../components/SidebarDash";
 import "../../style/pages/DataKawasan.css";
 import { getDataById } from "../../global/fetch-api";
-import { MapContainer, TileLayer, Polygon, Popup, Marker } from "react-leaflet";
+import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
 import Preloader from "../../components/Preloader";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+
 
 function OfficeCenter() {
   const navigate = useNavigate();
@@ -52,12 +51,8 @@ function OfficeCenter() {
         <div className="card-datkaw">
           <h1>Wilayah Kantor Pusat</h1>
           <MapComponent latitude={latitude} longitude={longitude} />
-          {/* <div className="img-datkaw">
-            <img src={facilityData.properties.image[0][1]} alt={facilityData.properties.image[0][0]} />
-            <img src={facilityData.properties.image[1][1]} alt={facilityData.properties.image[1][0]} />
-          </div> */}
+     
           <div className="content-datkaw">
-            {/* <p>{facilityData.properties.description}</p> */}
             <button id="btn4" onClick={handleButtonClicked}>
               <GeoAlt />
               Kunjungi lokasi peta
