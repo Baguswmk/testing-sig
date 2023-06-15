@@ -47,6 +47,8 @@
 
 .faq-deskripsi {
   margin: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .faq-deskripsi p {

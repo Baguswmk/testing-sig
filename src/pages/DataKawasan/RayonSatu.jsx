@@ -90,15 +90,18 @@ const MapComponent = ({ latitude, longitude }) => {
       </Marker>
       <Marker position={[-4.681056500565115, 104.83060918076104]}>
         <Popup>
-          {" "}
-          <a href="">P3GI Kebun Percobaan Bungamayang</a>{" "}
+          <a href="">P3GI Kebun Percobaan Bungamayang</a>
         </Popup>
       </Marker>
       <Marker position={[-4.680035313625973, 104.83301244003653]}>
         <Popup>Wisma Serbaguna</Popup>
       </Marker>
       <Marker position={[-4.682612003336363, 104.83119824349887]}>
-        <Popup>Mess Karyawan (Perum T50 Rayon I)</Popup>
+        <Popup>
+          <a href="/fasilitasumum/mess" style={{ color: "black" }}>
+            Mess Karyawan (Perum T50 Rayon I)
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.680550440004055, 104.83147436450392]}>
         <Popup>Gudang Pupuk</Popup>

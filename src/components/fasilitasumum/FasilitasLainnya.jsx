@@ -51,52 +51,66 @@ function FasilitasLainnya() {
           <div className="faq-content">
             <Dropdown index={1} isOpen={openIndexes.includes(1)} onClick={handleClick} onClickOutside={handleClickOutside} question="Sekolah">
               <div className="faq-deskripsi">
-                <a href="">TK PG Bungamayang</a>
-                <a href="">SD PG Bungamayang</a>
-                <a href="">SMP PG Bungamayang</a>
+                <a href="/fasilitasumum/sekolah">Paud PG Bungamayang</a>
+                <a href="/fasilitasumum/sekolah">TK PG Bungamayang</a>
+                <a href="/fasilitasumum/sekolah">SD PG Bungamayang</a>
+                <a href="/fasilitasumum/sekolah">SMP PG Bungamayang</a>
               </div>
             </Dropdown>
           </div>
           <div className="faq-content">
             <Dropdown index={2} isOpen={openIndexes.includes(2)} onClick={handleClick} onClickOutside={handleClickOutside} question="Klinik">
               <div className="faq-deskripsi">
-                <a href="">Klinik</a>
+                <a href="/fasilitasumum/klinik">Klinik</a>
               </div>
             </Dropdown>
           </div>
           <div className="faq-content">
             <Dropdown index={3} isOpen={openIndexes.includes(3)} onClick={handleClick} onClickOutside={handleClickOutside} question="Toilet">
               <div className="faq-deskripsi">
-                <a href="">Toilet</a>
+                <a href="/fasilitasumum/toilet">Toilet</a>
               </div>
             </Dropdown>
           </div>
           <div className="faq-content">
-            <Dropdown index={3} isOpen={openIndexes.includes(3)} onClick={handleClick} onClickOutside={handleClickOutside} question="Gudang">
+            <Dropdown index={4} isOpen={openIndexes.includes(4)} onClick={handleClick} onClickOutside={handleClickOutside} question="Gudang">
               <div className="faq-deskripsi">
-                <a href="">Gudang Gula </a>
+                <a href="/fasilitasumum/gudang">Gudang Gula </a>
+                <a href="/fasilitasumum/gudang">Gudang Pupuk </a>
               </div>
             </Dropdown>
           </div>
           <div className="faq-content">
-            <Dropdown index={3} isOpen={openIndexes.includes(3)} onClick={handleClick} onClickOutside={handleClickOutside} question="Laboratorium">
+            <Dropdown index={5} isOpen={openIndexes.includes(5)} onClick={handleClick} onClickOutside={handleClickOutside} question="Laboratorium">
               <div className="faq-deskripsi">
-                <a href="">Laboratorium Pabrik PG Bunga Mayang</a>
-                <a href="">Laboratorium Core Sampler PG Bungamayang</a>
+                <a href="/fasilitasumum/laboratorium">Laboratorium Pabrik PG Bunga Mayang</a>
+                <a href="/fasilitasumum/laboratorium">Laboratorium Core Sampler PG Bungamayang</a>
               </div>
             </Dropdown>
           </div>
           <div className="faq-content">
-            <Dropdown index={3} isOpen={openIndexes.includes(3)} onClick={handleClick} onClickOutside={handleClickOutside} question="Lapangan">
+            <Dropdown index={6} isOpen={openIndexes.includes(6)} onClick={handleClick} onClickOutside={handleClickOutside} question="Lapangan">
               <div className="faq-deskripsi">
-                <a href="">Lapangan Tenis</a>
+                <a href="/fasilitasumum/lapangan">Lapangan Tenis</a>
               </div>
             </Dropdown>
           </div>
           <div className="faq-content">
-            <Dropdown index={3} isOpen={openIndexes.includes(3)} onClick={handleClick} onClickOutside={handleClickOutside} question="Taman Embung">
+            <Dropdown index={7} isOpen={openIndexes.includes(7)} onClick={handleClick} onClickOutside={handleClickOutside} question="Taman Embung">
               <div className="faq-deskripsi">
-                <a href="">Toilet</a>
+                <a href="/fasilitasumum/tamanembung">Taman Embung</a>
+              </div>
+            </Dropdown>
+          </div>
+          <div className="faq-content">
+            <Dropdown index={8} isOpen={openIndexes.includes(8)} onClick={handleClick} onClickOutside={handleClickOutside} question="Station">
+              <div className="faq-deskripsi">
+                <a href="/fasilitasumum/station">Mill and Diffuser Station PG Bungamayang PT Perkebunan Nusantara VII</a>
+                <a href="/fasilitasumum/station">Mill Station (Dcs) PTPN7 Bungamayang</a>
+                <a href="/fasilitasumum/station">Workshop Station Besali</a>
+                <a href="/fasilitasumum/station">Stasiun Pengolahan (Mill Station) PG Bungamayang</a>
+                <a href="/fasilitasumum/station">Instrument Station 709 PTPN7 Bungamayang</a>
+                <a href="/fasilitasumum/station">Cooling Tower</a>
               </div>
             </Dropdown>
           </div>
