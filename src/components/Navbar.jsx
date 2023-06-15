@@ -53,11 +53,12 @@ function Navbar() {
               )}
             </li>
             <li>
-              <a href="/tentangkami">Tentang Kami</a>
+              <a href="/sejarah">Sejarah</a>
             </li>
             <li>
-              <a href="/faq">Faq</a>
+              <a href="/tentangkami">Tentang Kami</a>
             </li>
+
             <button id="btn1">
               <a href="/hubungikami"> Hubungi Kami</a>
             </button>

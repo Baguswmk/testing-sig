@@ -5,10 +5,10 @@ import SidebarDashboard from "../SidebarDash";
 import MasjidPict from "../../public/img/kantor.webp";
 import "../../style/components/fasilitasumum/Masjid.css";
 
-function Klinik() {
+function Station() {
   const navigate = useNavigate();
-  const handleButtonClicked = () => {
-    window.open("https://goo.gl/maps/vVbMQe78eV1QVNPRA");
+  const handleButtonClicked = (link) => {
+    window.open(link);
   };
   return (
     <div className="wrapper-fasum">
@@ -21,20 +21,17 @@ function Klinik() {
           <h1> Fasilitas Umum</h1>
         </div>
         <div className="card-fasum">
-          <h1>Klinik PG Bungamayang</h1>
+          <h1>Taman Embung</h1>
           <div className="img-fasum">
             <img src={MasjidPict} alt={MasjidPict} />
           </div>
           <div className="content-fasum">
             <p>
-              Klinik di PTPN 7 Bunga Mayang adalah fasilitas kesehatan yang menyediakan pelayanan medis dan perawatan kesehatan bagi masyarakat di dalam kompleks perkebunan tersebut. Klinik ini bertujuan untuk memberikan akses yang mudah
-              dan nyaman untuk layanan kesehatan yang berkualitas. Bangunan klinik didesain dengan baik, menciptakan ruang tunggu yang nyaman dan bersih bagi pasien.
-              <br />
-              <br />
-              Di dalam klinik terdapat ruang konsultasi yang dilengkapi dengan peralatan medis dan fasilitas yang diperlukan untuk pemeriksaan medis. Dokter dan tenaga medis yang berpengalaman hadir untuk memberikan pelayanan medis yang
-              komprehensif dan peduli terhadap kebutuhan pasien.
+              Taman Embung di PTPN 7 Bunga Mayang adalah fasilitas rekreasi yang menawarkan pengalaman alam yang indah bagi pengunjung kompleks perkebunan. Terletak di lingkungan yang hijau dan asri, taman embung ini memberikan tempat yang
+              ideal untuk bersantai, menikmati keindahan alam, dan menghabiskan waktu bersama keluarga atau teman-teman. Taman Embung ini dirancang dengan baik dan memiliki berbagai fasilitas yang menarik. Terdapat jalur pejalan kaki yang
+              melingkari embung, area duduk yang nyaman, dan area bermain untuk anak-anak. Pengunjung dapat menjelajahi taman, menikmati pemandangan embung yang tenang, atau hanya duduk santai sambil menikmati udara segar.
             </p>
-            <button id="btn4" onClick={handleButtonClicked}>
+            <button id="btn4" onClick={handleButtonClicked("https://goo.gl/maps/QtnLfDHbiX5jBQS78")}>
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
@@ -46,4 +43,4 @@ function Klinik() {
   );
 }
 
-export default Klinik;
+export default Station;

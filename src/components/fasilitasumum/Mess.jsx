@@ -4,7 +4,7 @@ import SidebarDashboard from "../SidebarDash";
 import MasjidPict from "../../public/img/kantor.webp";
 import "../../style/components/fasilitasumum/Masjid.css";
 
-function Toilet() {
+function Mess() {
   const navigate = useNavigate();
   const handleButtonClicked = (link) => {
     window.open(link);
@@ -84,4 +84,4 @@ function Toilet() {
   );
 }
 
-export default Toilet;
+export default Mess;

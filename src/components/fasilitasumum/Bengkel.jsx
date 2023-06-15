@@ -5,10 +5,10 @@ import SidebarDashboard from "../SidebarDash";
 import MasjidPict from "../../public/img/kantor.webp";
 import "../../style/components/fasilitasumum/Masjid.css";
 
-function Klinik() {
+function Bengkel() {
   const navigate = useNavigate();
-  const handleButtonClicked = () => {
-    window.open("https://goo.gl/maps/vVbMQe78eV1QVNPRA");
+  const handleButtonClicked = (link) => {
+    window.open(link);
   };
   return (
     <div className="wrapper-fasum">
@@ -21,20 +21,16 @@ function Klinik() {
           <h1> Fasilitas Umum</h1>
         </div>
         <div className="card-fasum">
-          <h1>Klinik PG Bungamayang</h1>
+          <h1>Lapangan Tenis</h1>
           <div className="img-fasum">
             <img src={MasjidPict} alt={MasjidPict} />
           </div>
           <div className="content-fasum">
             <p>
-              Klinik di PTPN 7 Bunga Mayang adalah fasilitas kesehatan yang menyediakan pelayanan medis dan perawatan kesehatan bagi masyarakat di dalam kompleks perkebunan tersebut. Klinik ini bertujuan untuk memberikan akses yang mudah
-              dan nyaman untuk layanan kesehatan yang berkualitas. Bangunan klinik didesain dengan baik, menciptakan ruang tunggu yang nyaman dan bersih bagi pasien.
-              <br />
-              <br />
-              Di dalam klinik terdapat ruang konsultasi yang dilengkapi dengan peralatan medis dan fasilitas yang diperlukan untuk pemeriksaan medis. Dokter dan tenaga medis yang berpengalaman hadir untuk memberikan pelayanan medis yang
-              komprehensif dan peduli terhadap kebutuhan pasien.
+              Bengkel dan Pool TMA (Traktor, Mesin, dan Alat Berat) PG Bungamayang PT Perkebunan Nusantara VII adalah fasilitas yang menyediakan layanan perawatan, perbaikan, dan pengelolaan traktor, mesin, dan alat berat yang digunakan
+              dalam kegiatan pertanian di perkebunan PT Perkebunan Nusantara VII. Fasilitas ini bertujuan untuk menjaga ketersediaan dan kinerja optimal dari traktor, mesin, dan alat berat yang digunakan dalam operasional perkebunan.
             </p>
-            <button id="btn4" onClick={handleButtonClicked}>
+            <button id="btn4" onClick={handleButtonClicked("https://goo.gl/maps/CdwdSRBy3iHnukKt5")}>
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
@@ -46,4 +42,4 @@ function Klinik() {
   );
 }
 
-export default Klinik;
+export default Bengkel;

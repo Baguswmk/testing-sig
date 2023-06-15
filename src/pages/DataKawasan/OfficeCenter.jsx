@@ -7,20 +7,24 @@ import "../../style/pages/DataKawasan.css";
 import { getDataById } from "../../global/fetch-api";
 import { MapContainer, TileLayer, Polygon, Popup, Marker } from "react-leaflet";
 import Preloader from "../../components/Preloader";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 function OfficeCenter() {
   const navigate = useNavigate();
   const [facilityData, setFacilityData] = useState(null);
   const [coordinates, setCoordinates] = useState([]);
-
+  const handleButtonClicked = () => {
+    window.open("https://goo.gl/maps/aVADMakfQG5ygEtb9");
+  };
   useEffect(() => {
     const fetchFacilityData = async () => {
       try {
-        const id = 30;
+        const id = 2;
         const response = await getDataById(id);
         if (response && response.data) {
           setFacilityData(response.data);
-          setCoordinates(response.data.geometry.coordinates[0]);
+          setCoordinates(response.data.geometry.coordinates);
         }
       } catch (error) {
         console.log(error);
@@ -46,14 +50,15 @@ function OfficeCenter() {
           <h1> Data Kawasan</h1>
         </div>
         <div className="card-datkaw">
-          <h1>{facilityData.properties.name}</h1>
+          <h1>Wilayah Kantor Pusat</h1>
           <MapComponent latitude={latitude} longitude={longitude} />
-          <div className="img-datkaw">
-            <img src={facilityData.properties.image[0]} alt={facilityData.properties.image[0]} />
-          </div>
+          {/* <div className="img-datkaw">
+            <img src={facilityData.properties.image[0][1]} alt={facilityData.properties.image[0][0]} />
+            <img src={facilityData.properties.image[1][1]} alt={facilityData.properties.image[1][0]} />
+          </div> */}
           <div className="content-datkaw">
-            <p>{facilityData.properties.description}</p>
-            <button id="btn4">
+            {/* <p>{facilityData.properties.description}</p> */}
+            <button id="btn4" onClick={handleButtonClicked}>
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
@@ -65,33 +70,95 @@ function OfficeCenter() {
   );
 }
 
-const MapComponent = ({ latitude, longitude }) => {
-  const coordinates = latitude.map((lat, index) => [lat, longitude[index]]);
+const MapComponent = () => {
+  const pusat = [-4.588996115847869, 104.8738214731423];
 
   return (
-    <MapContainer center={coordinates[0]} zoom={12} scrollWheelZoom={false}>
+    <MapContainer center={pusat} zoom={15} scrollWheelZoom={false}>
       <TileLayer attribution='&copy; <a href="https://www.esri.com/">Esri</a>' url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" />
-      <Polygon positions={coordinates} color="red" />
-      <Marker position={[-4.681587787047458, 104.83167284683928]}>
-        <Popup>Kantor Rayon I PTPN 7</Popup>
+      <Marker position={[-4.593368, 104.875195]}>
+        <Popup>POS Gerbang Kantor Central</Popup>
       </Marker>
-      <Marker position={[-4.681056500565115, 104.83060918076104]}>
-        <Popup>P3GI Kebun Percobaan Bungamayang</Popup>
+      <Marker position={[-4.591195, 104.873974]}>
+        <Popup>Masjid Baiturrohman PTPN IV</Popup>
       </Marker>
-      <Marker position={[-4.680035313625973, 104.83301244003653]}>
-        <Popup>Wisma Serbaguna</Popup>
+      <Marker position={[-4.5916682586542965, 104.87387155386557]}>
+        <Popup>Gedung Tjoek Soepono PG Bungamayang</Popup>
       </Marker>
-      <Marker position={[-4.682612003336363, 104.83119824349887]}>
-        <Popup>Mess Karyawan (Perum T50 Rayon I)</Popup>
+      <Marker position={[-4.593442114642538, 104.87379997054991]}>
+        <Popup>Paud</Popup>
       </Marker>
-      <Marker position={[-4.680550440004055, 104.83147436450392]}>
-        <Popup>Gudang Pupuk</Popup>
+      <Marker position={[-4.5930038385881, 104.8740901453161]}>
+        <Popup>TK</Popup>
       </Marker>
-      <Marker position={[-4.6811112342137235, 104.83215248127057]}>
-        <Popup>Bengkel</Popup>
+      <Marker position={[-4.591990620531944, 104.87455366641129]}>
+        <Popup>SD</Popup>
       </Marker>
-      <Marker position={[-4.682133795014973, 104.83109260106863]}>
-        <Popup>Mushola</Popup>
+      <Marker position={[-4.592420963314999, 104.87456464256461]}>
+        <Popup>SMP</Popup>
+      </Marker>
+      <Marker position={[-4.594503381093948, 104.87194865921903]}>
+        <Popup>Klinik</Popup>
+      </Marker>
+      <Marker position={[-4.590846618277433, 104.87257979493575]}>
+        <Popup>Lapangan Tenis</Popup>
+      </Marker>
+      <Marker position={[-4.5901043012888545, 104.8727549671523]}>
+        <Popup>Mess General Manager</Popup>
+      </Marker>
+      <Marker position={[-4.590365216791212, 104.87232368469289]}>
+        <Popup>Mess Tamu 1</Popup>
+      </Marker>
+      <Marker position={[-4.590872147129439, 104.8710431334721]}>
+        <Popup>Mess Tamu 2</Popup>
+      </Marker>
+      <Marker position={[-4.590303218092043, 104.87197610650439]}>
+        <Popup>Taman Embung</Popup>
+      </Marker>
+      <Marker position={[-4.593507760044691, 104.87186816738904]}>
+        <Popup>30 Mess Karyawan</Popup>
+      </Marker>
+      <Marker position={[-4.589354477930334, 104.87307537319575]}>
+        <Popup>Laboratorium Core Sampler PG Bungamayang</Popup>
+      </Marker>
+      <Marker position={[-4.58854500332904, 104.87302034947172]}>
+        <Popup>POM BBM Bunga Mayang</Popup>
+      </Marker>
+      <Marker position={[-4.588801670053586, 104.8728567347365]}>
+        <Popup>Mini Market</Popup>
+      </Marker>
+      <Marker position={[4.588165231708514, 104.87348542310131]}>
+        <Popup>Jembatan Timbang</Popup>
+      </Marker>
+      <Marker position={[-4.588964700923753, 104.87357672159165]}>
+        <Popup>Pos Satpam & ATM BNI</Popup>
+      </Marker>
+      <Marker position={[-4.588996115847869, 104.8738214731423]}>
+        <Popup>Kantor Central PG</Popup>
+      </Marker>
+      <Marker position={[-4.588631, 104.873917]}>
+        <Popup>Pintu Masuk Area & Absensi Karyawan</Popup>
+      </Marker>
+      <Marker position={[-4.588675366162257, 104.8743536500561]}>
+        <Popup>Station PG</Popup>
+      </Marker>
+      <Marker position={[-4.588089019197086, 104.87660143571232]}>
+        <Popup>Gedung Gula</Popup>
+      </Marker>
+      <Marker position={[-4.5881031821724525, 104.8756494658602]}>
+        <Popup>Laboratorium Pabrik PG Bunga Mayang</Popup>
+      </Marker>
+      <Marker position={[-4.587290226928853, 104.87606719587576]}>
+        <Popup>Bengkel dan Pool TMA</Popup>
+      </Marker>
+      <Marker position={[-4.587111773215485, 104.87661848587969]}>
+        <Popup>Kantor TMA Bunga Mayang </Popup>
+      </Marker>
+      <Marker position={[-4.589564799739687, 104.87487083964741]}>
+        <Popup>Bagasse Storage Pabrik Gula Bunga Mayang atau Ampas Pembuangan</Popup>
+      </Marker>
+      <Marker position={[-4.587868, 104.874369]}>
+        <Popup>Lahan Pengumpulan Tebu</Popup>
       </Marker>
       {/* <Marker position={[-4.593368, 104.875195]}>
         <Popup>POS Gerbang Kantor Central</Popup>

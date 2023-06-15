@@ -4,7 +4,7 @@ import SidebarDashboard from "../SidebarDash";
 import MasjidPict from "../../public/img/kantor.webp";
 import "../../style/components/fasilitasumum/Masjid.css";
 
-function SekolahDasar() {
+function Sekolah() {
   const navigate = useNavigate();
   const handleButtonClicked = (link) => {
     window.open(link);
@@ -18,6 +18,24 @@ function SekolahDasar() {
             <ArrowLeft />
           </a>
           <h1> Fasilitas Umum</h1>
+        </div>
+        <div className="card-fasum">
+          <div className="item-fasum">
+            <h1>PAUD PG Bungamayang </h1>
+            <div className="img-fasum">
+              <img src={MasjidPict} alt={MasjidPict} />
+            </div>
+            <div className="content-fasum">
+              <p>
+                Paud di PTPN 7 Bunga Mayang adalah sebuah fasilitas pendidikan yang menyediakan lingkungan yang mendukung untuk anak-anak usia dini dalam proses belajar dan bermain. Paud ini menawarkan tempat yang aman, ramah, dan penuh
+                keceriaan. Lokasi Paud ini terletak di dalam kompleks PTPN 7 Bunga Mayang dan mudah diakses oleh para orang tua atau wali murid.
+              </p>
+              <button id="btn4" onClick={() => handleButtonClicked("https://goo.gl/maps/PK5352ffdo1E3SUN9")}>
+                <GeoAlt />
+                Kunjungi lokasi peta
+              </button>
+            </div>
+          </div>
         </div>
         <div className="card-fasum">
           <div className="item-fasum">
@@ -90,4 +108,4 @@ function SekolahDasar() {
   );
 }
 
-export default SekolahDasar;
+export default Sekolah;

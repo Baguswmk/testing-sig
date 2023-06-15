@@ -87,7 +87,10 @@ function Dashboard() {
             )}
           </div>
           <li>
-            <a href="">Tentang Kami</a>
+            <a href="/prosesproduksi">Proses Produksi</a>
+          </li>
+          <li>
+            <a href="/tentangkami">Tentang Kami</a>
           </li>
         </ul>
 

@@ -44,51 +44,59 @@ function FasilitasLainnya() {
           <div className="faq-content">
             <Dropdown index={0} isOpen={openIndexes.includes(0)} onClick={handleClick} onClickOutside={handleClickOutside} question="Masjid">
               <div className="faq-deskripsi">
-                <p>
-                  Untuk keluar dari sebuah website, Anda dapat mengikuti langkah-langkah berikut: <br />
-                  1. Tutup tab atau jendela browser yang sedang membuka website tersebut. <br />
-                  2. Gunakan tombol "Back" atau "Kembali" pada browser untuk kembali ke halaman sebelumnya. <br />
-                  3. Jika Anda menggunakan keyboard, tekan tombol "Alt + F4" (untuk Windows) atau "Command + W" (untuk Mac) untuk menutup jendela browser secara keseluruhan.
-                  <br />
-                  4. Jika menggunakan perangkat seluler, tekan tombol kembali atau navigasi yang sesuai pada perangkat Anda untuk keluar dari aplikasi atau halaman web. <br />
-                  5. Anda juga dapat menutup browser dengan mengklik ikon "X" yang terletak di pojok kanan atas jendela browser.
-                </p>
+                <a href="">Masjid Masjid Baiturrohman PTPN IV</a>
               </div>
             </Dropdown>
           </div>
           <div className="faq-content">
             <Dropdown index={1} isOpen={openIndexes.includes(1)} onClick={handleClick} onClickOutside={handleClickOutside} question="Sekolah">
               <div className="faq-deskripsi">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque modi reiciendis qui, eaque corrupti officia unde atque debitis et, ipsum vitae sint iure nostrum quisquam velit esse, commodi harum ratione blanditiis
-                  mollitia obcaecati. Corrupti aut explicabo error earum ratione harum hic, quas veritatis, magnam autem quasi aperiam adipisci quidem asperiores laborum dolor. Assumenda, aperiam nam! Ipsam placeat esse quia illo magnam
-                  accusantium perferendis pariatur autem, sint vitae corporis nostrum repellendus veniam reprehenderit natus fuga tempore cupiditate! Facilis ducimus corporis tenetur ad, temporibus perferendis earum officiis modi magnam,
-                  quasi, ea libero harum cupiditate et eius nobis repudiandae! Expedita repellat suscipit magnam.
-                </p>
+                <a href="">TK PG Bungamayang</a>
+                <a href="">SD PG Bungamayang</a>
+                <a href="">SMP PG Bungamayang</a>
               </div>
             </Dropdown>
           </div>
           <div className="faq-content">
             <Dropdown index={2} isOpen={openIndexes.includes(2)} onClick={handleClick} onClickOutside={handleClickOutside} question="Klinik">
               <div className="faq-deskripsi">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque modi reiciendis qui, eaque corrupti officia unde atque debitis et, ipsum vitae sint iure nostrum quisquam velit esse, commodi harum ratione blanditiis
-                  mollitia obcaecati. Corrupti aut explicabo error earum ratione harum hic, quas veritatis, magnam autem quasi aperiam adipisci quidem asperiores laborum dolor. Assumenda, aperiam nam! Ipsam placeat esse quia illo magnam
-                  accusantium perferendis pariatur autem, sint vitae corporis nostrum repellendus veniam reprehenderit natus fuga tempore cupiditate! Facilis ducimus corporis tenetur ad, temporibus perferendis earum officiis modi magnam,
-                  quasi, ea libero harum cupiditate et eius nobis repudiandae! Expedita repellat suscipit magnam.
-                </p>
+                <a href="">Klinik</a>
               </div>
             </Dropdown>
           </div>
           <div className="faq-content">
             <Dropdown index={3} isOpen={openIndexes.includes(3)} onClick={handleClick} onClickOutside={handleClickOutside} question="Toilet">
               <div className="faq-deskripsi">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque modi reiciendis qui, eaque corrupti officia unde atque debitis et, ipsum vitae sint iure nostrum quisquam velit esse, commodi harum ratione blanditiis
-                  mollitia obcaecati. Corrupti aut explicabo error earum ratione harum hic, quas veritatis, magnam autem quasi aperiam adipisci quidem asperiores laborum dolor. Assumenda, aperiam nam! Ipsam placeat esse quia illo magnam
-                  accusantium perferendis pariatur autem, sint vitae corporis nostrum repellendus veniam reprehenderit natus fuga tempore cupiditate! Facilis ducimus corporis tenetur ad, temporibus perferendis earum officiis modi magnam,
-                  quasi, ea libero harum cupiditate et eius nobis repudiandae! Expedita repellat suscipit magnam.
-                </p>
+                <a href="">Toilet</a>
+              </div>
+            </Dropdown>
+          </div>
+          <div className="faq-content">
+            <Dropdown index={3} isOpen={openIndexes.includes(3)} onClick={handleClick} onClickOutside={handleClickOutside} question="Gudang">
+              <div className="faq-deskripsi">
+                <a href="">Gudang Gula </a>
+              </div>
+            </Dropdown>
+          </div>
+          <div className="faq-content">
+            <Dropdown index={3} isOpen={openIndexes.includes(3)} onClick={handleClick} onClickOutside={handleClickOutside} question="Laboratorium">
+              <div className="faq-deskripsi">
+                <a href="">Laboratorium Pabrik PG Bunga Mayang</a>
+                <a href="">Laboratorium Core Sampler PG Bungamayang</a>
+              </div>
+            </Dropdown>
+          </div>
+          <div className="faq-content">
+            <Dropdown index={3} isOpen={openIndexes.includes(3)} onClick={handleClick} onClickOutside={handleClickOutside} question="Lapangan">
+              <div className="faq-deskripsi">
+                <a href="">Lapangan Tenis</a>
+              </div>
+            </Dropdown>
+          </div>
+          <div className="faq-content">
+            <Dropdown index={3} isOpen={openIndexes.includes(3)} onClick={handleClick} onClickOutside={handleClickOutside} question="Taman Embung">
+              <div className="faq-deskripsi">
+                <a href="">Toilet</a>
               </div>
             </Dropdown>
           </div>

@@ -14,6 +14,9 @@ function RayonSatu() {
   const navigate = useNavigate();
   const [facilityData, setFacilityData] = useState(null);
   const [coordinates, setCoordinates] = useState([]);
+  const handleButtonClicked = () => {
+    window.open("https://goo.gl/maps/J5EXdP53MTToEnfA8");
+  };
 
   useEffect(() => {
     const fetchFacilityData = async () => {
@@ -50,13 +53,19 @@ function RayonSatu() {
         <div className="card-datkaw">
           <h1>{facilityData.properties.name}</h1>
           <MapComponent latitude={latitude} longitude={longitude} />
-          <div className="img-datkaw">
+          {/* <div className="img-datkaw">
             <img src={facilityData.properties.image[0][1]} alt={facilityData.properties.image[0][0]} />
             <img src={facilityData.properties.image[1][1]} alt={facilityData.properties.image[1][0]} />
-          </div>
-          <div className="content-datkaw">
-            <p>{facilityData.properties.description}</p>
-            <button id="btn4">
+          </div> */}
+          <div className="content-datkaw" style={{ width: "70%" }}>
+            <p>
+              {facilityData.properties.description}
+              {/* <br />
+              Kantor Central PTPN VII Distrik Bungamayang merupakan kantor pusat atau markas besar dari PTPN VII yang terletak di Distrik Bungamayang. PTPN VII adalah sebuah perusahaan negara yang bergerak di bidang perkebunan. Kantor
+              Central PTPN VII Distrik Bungamayang berfungsi sebagai pusat pengelolaan dan pengendalian operasional perkebunan di wilayah tersebut. Di kantor pusat ini, dilakukan berbagai kegiatan manajerial, administrasi, perencanaan, dan
+              pengawasan terkait operasional perkebunan. Selain itu, kantor ini juga menjadi tempat berkumpulnya berbagai departemen dan divisi yang terkait dengan kegiatan perkebunan di wilayah Distrik Bungamayang. */}
+            </p>
+            <button id="btn4" onClick={handleButtonClicked}>
               <GeoAlt />
               Kunjungi lokasi peta
             </button>
@@ -70,16 +79,20 @@ function RayonSatu() {
 
 const MapComponent = ({ latitude, longitude }) => {
   const coordinates = latitude.map((lat, index) => [lat, longitude[index]]);
+  const pusat = [-4.681587787047458, 104.83167284683928];
 
   return (
-    <MapContainer center={coordinates[0]} zoom={12} scrollWheelZoom={false}>
+    <MapContainer center={pusat} zoom={12} scrollWheelZoom={false}>
       <TileLayer attribution='&copy; <a href="https://www.esri.com/">Esri</a>' url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" />
       <Polygon positions={coordinates} color="red" />
       <Marker position={[-4.681587787047458, 104.83167284683928]}>
         <Popup>Kantor Rayon I PTPN 7</Popup>
       </Marker>
       <Marker position={[-4.681056500565115, 104.83060918076104]}>
-        <Popup>P3GI Kebun Percobaan Bungamayang</Popup>
+        <Popup>
+          {" "}
+          <a href="">P3GI Kebun Percobaan Bungamayang</a>{" "}
+        </Popup>
       </Marker>
       <Marker position={[-4.680035313625973, 104.83301244003653]}>
         <Popup>Wisma Serbaguna</Popup>
