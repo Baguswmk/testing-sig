@@ -187,7 +187,12 @@ const MapComponent = () => {
         <Popup>Pos Satpam & ATM BNI</Popup>
       </Marker>
       <Marker position={[-4.588996115847869, 104.8738214731423]}>
-        <Popup>Kantor Central PG</Popup>
+        <Popup>
+          {" "}
+          <a href="/fasilitasumum/gedung" style={{ color: "black" }}>
+            Kantor Central PG
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.588631, 104.873917]}>
         <Popup>Pintu Masuk Area & Absensi Karyawan</Popup>
@@ -207,16 +212,33 @@ const MapComponent = () => {
         </Popup>
       </Marker>
       <Marker position={[-4.587290226928853, 104.87606719587576]}>
-        <Popup>Bengkel dan Pool TMA</Popup>
+        <Popup>
+          <a href="/fasilitasumum/bengkel" style={{ color: "black" }}>
+            Bengkel dan Pool TMA
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.587111773215485, 104.87661848587969]}>
-        <Popup>Kantor TMA Bunga Mayang </Popup>
+        <Popup>
+          {" "}
+          <a href="/fasilitasumum/gedung" style={{ color: "black" }}>
+            Kantor TMA Bunga Mayang
+          </a>{" "}
+        </Popup>
       </Marker>
       <Marker position={[-4.589564799739687, 104.87487083964741]}>
-        <Popup>Bagasse Storage Pabrik Gula Bunga Mayang atau Ampas Pembuangan</Popup>
+        <Popup>
+          <a href="/fasilitasumum/gedung" style={{ color: "black" }}>
+            Bagasse Storage Pabrik Gula Bunga Mayang atau Ampas Pembuangan
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.587868, 104.874369]}>
-        <Popup>Lahan Pengumpulan Tebu</Popup>
+        <Popup>
+          <a href="/fasilitasumum/gedung" style={{ color: "black" }}>
+            Lahan Pengumpulan Tebu
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.588675366162257, 104.8743536500561]}>
         <Popup>
@@ -260,9 +282,6 @@ const MapComponent = () => {
           </a>
         </Popup>
       </Marker>
-      {/* <Marker position={[-4.593368, 104.875195]}>
-        <Popup>POS Gerbang Kantor Central</Popup>
-      </Marker> */}
     </MapContainer>
   );
 };

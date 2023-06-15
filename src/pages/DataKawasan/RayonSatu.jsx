@@ -89,12 +89,14 @@ const MapComponent = ({ latitude, longitude }) => {
         <Popup>Kantor Rayon I PTPN 7</Popup>
       </Marker>
       <Marker position={[-4.681056500565115, 104.83060918076104]}>
-        <Popup>
-          <a href="">P3GI Kebun Percobaan Bungamayang</a>
-        </Popup>
+        <Popup>P3GI Kebun Percobaan Bungamayang</Popup>
       </Marker>
       <Marker position={[-4.680035313625973, 104.83301244003653]}>
-        <Popup>Wisma Serbaguna</Popup>
+        <Popup>
+          <a href="/fasilitasumum/mess" style={{ color: "black" }}>
+            Wisma Serbaguna
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.682612003336363, 104.83119824349887]}>
         <Popup>
@@ -104,7 +106,11 @@ const MapComponent = ({ latitude, longitude }) => {
         </Popup>
       </Marker>
       <Marker position={[-4.680550440004055, 104.83147436450392]}>
-        <Popup>Gudang Pupuk</Popup>
+        <Popup>
+          <a href="/fasilitasumum/gudang" style={{ color: "black" }}>
+            Gudang Pupuk
+          </a>
+        </Popup>
       </Marker>
       <Marker position={[-4.6811112342137235, 104.83215248127057]}>
         <Popup>
@@ -114,11 +120,13 @@ const MapComponent = ({ latitude, longitude }) => {
         </Popup>
       </Marker>
       <Marker position={[-4.682133795014973, 104.83109260106863]}>
-        <Popup>Mushola</Popup>
+        <Popup>
+          {" "}
+          <a href="/fasilitasumum/masjid" style={{ color: "black" }}>
+            Mushola
+          </a>
+        </Popup>
       </Marker>
-      {/* <Marker position={[-4.593368, 104.875195]}>
-        <Popup>POS Gerbang Kantor Central</Popup>
-      </Marker> */}
     </MapContainer>
   );
 };
